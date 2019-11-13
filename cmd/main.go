@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	n := 2
+	n := 10
 
 	fmt.Println(climbStairs(n))
 }
