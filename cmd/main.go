@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	n := 10
 
-	fmt.Println(climbStairs(n))
+	fmt.Println(minDistance("horse", "ros"))
 }
