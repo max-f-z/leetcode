@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 
-	fmt.Println(coinChange([]int{2}, 1))
+	fmt.Println(maxProfit([]int{7, 1, 5, 3, 6, 4}))
 }
