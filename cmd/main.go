@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 
-	fmt.Println(generateTrees(3))
+	fmt.Println(coinChange([]int{2}, 1))
 }
