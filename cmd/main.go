@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(isSubsequence("axc", "ahbgdc"))
+	fmt.Println(numberOfArithmeticSlices([]int{1, 2, 3, 4}))
 }
