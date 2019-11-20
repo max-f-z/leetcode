@@ -1,9 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(numberOfArithmeticSlices([]int{1, 2, 3, 4}))
+	fmt.Println(largestDivisibleSubset([]int{8, 4, 2, 1}))
 }
