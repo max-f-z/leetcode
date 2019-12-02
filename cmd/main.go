@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(numDecodings("101"))
+	fmt.Println(wordBreak("catsandog", []string{"cats", "dog", "sand", "and", "cat"}))
 }
