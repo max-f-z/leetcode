@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{1, 5, 2}
+	nums := []int{4, 5, 6, 7, 0, 1, 2}
 
-	fmt.Println(PredictTheWinner(nums))
+	fmt.Println(search(nums, 1))
 }
