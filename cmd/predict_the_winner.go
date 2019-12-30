@@ -10,9 +10,8 @@ func optimal(nums []int, i, j int, turn bool) int {
 	if i == j {
 		if turn {
 			return nums[i]
-		} else {
-			return nums[i] * -1
 		}
+		return nums[i] * -1
 	}
 
 	if i > j {
