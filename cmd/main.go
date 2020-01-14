@@ -4,7 +4,8 @@ import "fmt"
 
 func main() {
 
-	r := "ab2[cde]fg"
+	nums := []int{7, 2, 5, 10, 8}
+	m := 2
 
-	fmt.Println(decodeString(r))
+	fmt.Println(splitArray(nums, m))
 }
