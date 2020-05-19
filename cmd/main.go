@@ -1,11 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 
-	nums := []int{7, 2, 5, 10, 8}
-	m := 2
+	nums1 := []int{1, 2}
+	nums2 := []int{3, 4}
 
-	fmt.Println(splitArray(nums, m))
+	fmt.Println(12 << uint(2))
+
+	fmt.Println(math.Pow(144, 1/float64(64)))
+
+	fmt.Println(findMedianSortedArrays(nums1, nums2))
 }
