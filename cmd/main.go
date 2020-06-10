@@ -6,5 +6,5 @@ import (
 
 func main() {
 
-	fmt.Println(reverse(-123))
+	fmt.Println(myAtoi("-5-"))
 }
