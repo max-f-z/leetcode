@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	fmt.Println(crackSafe(3, 1))
+	fmt.Println(reverse(-123))
 }
