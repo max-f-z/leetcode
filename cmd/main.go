@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(convert("PAYPALISHIRING", 4))
+	fmt.Println(isPalindrome(10))
 }
