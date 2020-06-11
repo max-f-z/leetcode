@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(lengthOfLongestSubstring("pwwkew"))
+	fmt.Println(convert("PAYPALISHIRING", 4))
 }
