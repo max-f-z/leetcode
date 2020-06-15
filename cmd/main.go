@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(intToRoman(58))
+	fmt.Println(romanToInt("IX"))
 }
