@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(isPalindrome(10))
+	fmt.Println(isMatch("ab", ".*"))
 }
