@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(letterCombinations("23"))
+	fmt.Println(fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
 }
