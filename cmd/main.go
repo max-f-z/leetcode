@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(threeSumClosest([]int{-1, 2, 1, -4}, 1))
+	fmt.Println(letterCombinations("23"))
 }
