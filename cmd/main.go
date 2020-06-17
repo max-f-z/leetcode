@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(removeNthFromEnd(&ListNode19{Val: 1}, 1))
+	fmt.Println(isValid("[]]"))
 }
