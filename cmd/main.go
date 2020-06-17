@@ -5,5 +5,10 @@ import (
 )
 
 func main() {
-	fmt.Println(isValid("[]]"))
+	l1 := &ListNode{Val: -9}
+	l1.Next = &ListNode{Val: 3}
+	l2 := &ListNode{Val: 5}
+	l2.Next = &ListNode{Val: 7}
+
+	fmt.Println(mergeTwoLists(l1, l2))
 }
