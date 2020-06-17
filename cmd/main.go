@@ -10,5 +10,5 @@ func main() {
 	l2 := &ListNode{Val: 5}
 	l2.Next = &ListNode{Val: 7}
 
-	fmt.Println(mergeTwoLists(l1, l2))
+	fmt.Println(generateParenthesis(3))
 }
