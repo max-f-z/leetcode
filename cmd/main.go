@@ -10,5 +10,5 @@ func main() {
 	l1.Next.Next = &ListNode{Val: 5}
 	l1.Next.Next.Next = &ListNode{Val: 7}
 
-	fmt.Println(reverseKGroup(l1, 3))
+	fmt.Println(removeDuplicates([]int{1, 1, 2}))
 }
