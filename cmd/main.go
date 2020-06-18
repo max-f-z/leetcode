@@ -10,5 +10,5 @@ func main() {
 	l1.Next.Next = &ListNode{Val: 5}
 	l1.Next.Next.Next = &ListNode{Val: 7}
 
-	fmt.Println(strStr("aaaaa", "bba"))
+	fmt.Println(divide(-2147483648, 1))
 }
