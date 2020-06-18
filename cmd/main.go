@@ -10,5 +10,5 @@ func main() {
 	l1.Next.Next = &ListNode{Val: 5}
 	l1.Next.Next.Next = &ListNode{Val: 7}
 
-	fmt.Println(removeElement([]int{3, 2, 2, 3}, 3))
+	fmt.Println(strStr("aaaaa", "bba"))
 }
