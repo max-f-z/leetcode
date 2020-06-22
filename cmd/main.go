@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(shortestDistance([]string{"practice", "makes", "perfect", "coding", "makes"}, "makes", "coding"))
+	fmt.Println(shortestWordDistance([]string{"practice", "makes", "perfect", "coding", "makes"}, "makes", "makes"))
 }
