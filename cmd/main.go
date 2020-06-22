@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(isStrobogrammatic("88"))
+	fmt.Println(findStrobogrammatic(2))
 }
