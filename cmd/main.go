@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(getFactors(12))
+	fmt.Println(verifyPreorder([]int{5, 2, 1, 3, 6}))
 }
