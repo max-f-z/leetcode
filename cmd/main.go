@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(canPermutePalindrome("carerac"))
+	fmt.Println(generatePalindromes("aabbbb"))
 }
