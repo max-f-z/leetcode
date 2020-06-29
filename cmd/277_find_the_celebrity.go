@@ -1,6 +1,6 @@
 package main
 
-func solution(knows func(a int, b int) bool) func(n int) int {
+func solution2(knows func(a int, b int) bool) func(n int) int {
 	return func(n int) int {
 
 		for i := 0; i < n; i++ {

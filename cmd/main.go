@@ -9,6 +9,7 @@ func main() {
 	root.Right = &TreeNode{Val: 5}
 	root.Left.Left = &TreeNode{Val: 1}
 	root.Left.Right = &TreeNode{Val: 3}
-
-	fmt.Println(numWays(1, 1))
+	a := []int{3, 5, 6, 7, 8, 9}
+	wiggleSort(a)
+	fmt.Println(a)
 }
