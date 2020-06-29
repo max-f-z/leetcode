@@ -10,5 +10,5 @@ func main() {
 	root.Left.Left = &TreeNode{Val: 1}
 	root.Left.Right = &TreeNode{Val: 3}
 
-	fmt.Println(closestKValues(root, 3.714286, 2))
+	fmt.Println(numWays(1, 1))
 }
