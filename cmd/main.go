@@ -13,6 +13,6 @@ func main() {
 	root.Left.Right = &TreeNode{Val: 4}
 	root.Left.Left.Left = &TreeNode{Val: 1}
 
-	fmt.Println(wordPattern("abc", "dog cat dog"))
+	fmt.Println(wordPatternMatch("itwasthebestoftimes", "ittwaastthhebesttoofttimesss"))
 
 }
