@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -14,7 +13,6 @@ func main() {
 	root.Left.Right = &TreeNode{Val: 4}
 	root.Left.Left.Left = &TreeNode{Val: 1}
 
-	fmt.Println(inorderSuccessor(root, root.Right))
+	fmt.Println(wordPattern("abc", "dog cat dog"))
 
-	wallsAndGates([][]int{{math.MaxInt32, -1, 0, math.MaxInt32}, {math.MaxInt32, math.MaxInt32, math.MaxInt32, -1}, {math.MaxInt32, -1, math.MaxInt32, -1}, {0, -1, math.MaxInt32, math.MaxInt32}})
 }
