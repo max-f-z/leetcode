@@ -13,6 +13,6 @@ func main() {
 	root.Left.Right = &TreeNode{Val: 4}
 	root.Left.Left.Left = &TreeNode{Val: 1}
 
-	fmt.Println(canWin("+++++"))
+	fmt.Println(minTotalDistance([][]int{{1, 0, 0, 0, 1}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}}))
 
 }
