@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	// fmt.Println(alienOrder([]string{"bsusz", "rhn", "gfbrwec", "kuw", "qvpxbexnhx", "wnp", "laxutz", "czxccww"}))
@@ -12,4 +15,6 @@ func main() {
 	root.Left.Left.Left = &TreeNode{Val: 1}
 
 	fmt.Println(inorderSuccessor(root, root.Right))
+
+	wallsAndGates([][]int{{math.MaxInt32, -1, 0, math.MaxInt32}, {math.MaxInt32, math.MaxInt32, math.MaxInt32, -1}, {math.MaxInt32, -1, math.MaxInt32, -1}, {0, -1, math.MaxInt32, math.MaxInt32}})
 }
