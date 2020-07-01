@@ -33,13 +33,23 @@ func main() {
 	// 		stack = append(stack, &tmp)
 	// 	}
 	// }
-	obj := Constructor307([]int{9, -8})
-	obj.Update(0, 3)
-	fmt.Println(obj.SumRange(1, 1))
-	fmt.Println(obj.SumRange(0, 1))
-	obj.Update(1, -3)
-	fmt.Println(obj.SumRange(0, 1))
+	// obj := Constructor307([]int{9, -8})
+	// obj.Update(0, 3)
+	// fmt.Println(obj.SumRange(1, 1))
+	// fmt.Println(obj.SumRange(0, 1))
+	// obj.Update(1, -3)
+	// fmt.Println(obj.SumRange(0, 1))
 
+	root := &TreeNode{Val: 3}
+	root.Left = &TreeNode{Val: 9}
+	root.Right = &TreeNode{Val: 8}
+	root.Left.Left = &TreeNode{Val: 4}
+	root.Left.Right = &TreeNode{Val: 0}
+	root.Right.Left = &TreeNode{Val: 1}
+	root.Right.Right = &TreeNode{Val: 7}
+	root.Left.Right.Right = &TreeNode{Val: 2}
+	root.Right.Left.Left = &TreeNode{Val: 5}
+	fmt.Println(verticalOrder(root))
 }
 
 func powerTrue(k int) bool {
