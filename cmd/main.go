@@ -33,8 +33,12 @@ func main() {
 	// 		stack = append(stack, &tmp)
 	// 	}
 	// }
-
-	fmt.Println(numIslands2(4, 4, [][]int{{1, 0}, {1, 2}, {1, 1}, {1, 0}, {2, 3}, {3, 3}, {1, 3}}))
+	obj := Constructor307([]int{9, -8})
+	obj.Update(0, 3)
+	fmt.Println(obj.SumRange(1, 1))
+	fmt.Println(obj.SumRange(0, 1))
+	obj.Update(1, -3)
+	fmt.Println(obj.SumRange(0, 1))
 
 }
 
