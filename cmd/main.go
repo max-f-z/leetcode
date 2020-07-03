@@ -40,7 +40,7 @@ func main() {
 	// obj.Update(1, -3)
 	// fmt.Println(obj.SumRange(0, 1))
 
-	fmt.Println(generateAbbreviations("word"))
+	fmt.Println(countComponents(5, [][]int{{0, 1}, {1, 2}, {2, 3}, {3, 4}}))
 }
 
 func powerTrue(k int) bool {
