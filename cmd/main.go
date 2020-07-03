@@ -40,7 +40,7 @@ func main() {
 	// obj.Update(1, -3)
 	// fmt.Println(obj.SumRange(0, 1))
 
-	fmt.Println(shortestDistance317([][]int{{1, 0, 2, 0, 1}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}}))
+	fmt.Println(generateAbbreviations("word"))
 }
 
 func powerTrue(k int) bool {
