@@ -47,11 +47,27 @@ func main() {
 	// root.Left.Right = &TreeNode{Val: 8}
 	root.Left.Left = &TreeNode{Val: 1}
 
-	obj := Constructor346(3)
-	fmt.Println(obj.Next(1))
-	fmt.Println(obj.Next(10))
-	fmt.Println(obj.Next(3))
-	fmt.Println(obj.Next(5))
+	obj := Constructor353(3, 3, [][]int{{0, 1}, {0, 2}, {1, 2}, {2, 2}, {2, 1}, {2, 0}, {1, 0}})
+
+	fmt.Println(obj.Move("R"))
+	fmt.Println(obj.Move("R"))
+	fmt.Println(obj.Move("D"))
+	fmt.Println(obj.Move("D"))
+	fmt.Println(obj.Move("L"))
+	fmt.Println(obj.Move("L"))
+	fmt.Println(obj.Move("U"))
+	fmt.Println(obj.Move("U"))
+	fmt.Println(obj.Move("R"))
+	fmt.Println(obj.Move("R"))
+	fmt.Println(obj.Move("D"))
+	fmt.Println(obj.Move("D"))
+	fmt.Println(obj.Move("L"))
+	fmt.Println(obj.Move("L"))
+	fmt.Println(obj.Move("U"))
+	fmt.Println(obj.Move("R"))
+	fmt.Println(obj.Move("U"))
+	fmt.Println(obj.Move("L"))
+	fmt.Println(obj.Move("D"))
 }
 
 func powerTrue(k int) bool {
