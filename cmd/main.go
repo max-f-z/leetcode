@@ -47,7 +47,11 @@ func main() {
 	// root.Left.Right = &TreeNode{Val: 8}
 	root.Left.Left = &TreeNode{Val: 1}
 
-	fmt.Println(largestBSTSubtree(root))
+	obj := Constructor346(3)
+	fmt.Println(obj.Next(1))
+	fmt.Println(obj.Next(10))
+	fmt.Println(obj.Next(3))
+	fmt.Println(obj.Next(5))
 }
 
 func powerTrue(k int) bool {
