@@ -6,68 +6,7 @@ import (
 )
 
 func main() {
-	// fmt.Println(alienOrder([]string{"bsusz", "rhn", "gfbrwec", "kuw", "qvpxbexnhx", "gnp", "laxutz", "qzxccww"}))
-
-	// var cur, root *TreeNode
-	// cur = nil
-	// stack := []*TreeNode{}
-
-	// for i := 0; i < len(arr); i++ {
-	// 	tmp := TreeNode{}
-	// 	tmp.Val = arr[i]
-	// 	if i == 0 {
-	// 		root = &tmp
-	// 	}
-
-	// 	if cur == nil {
-	// 		cur = &tmp
-	// 	} else if cur.Left == nil {
-	// 		cur.Left = &tmp
-	// 		stack = append(stack, &tmp)
-	// 	} else if cur.Right == nil {
-	// 		cur.Right = &tmp
-	// 		stack = append(stack, &tmp)
-	// 	} else {
-	// 		cur, stack = stack[0], stack[1:]
-	// 		cur.Left = &tmp
-	// 		stack = append(stack, &tmp)
-	// 	}
-	// }
-	// obj := Constructor307([]int{9, -8})
-	// obj.Update(0, 3)
-	// fmt.Println(obj.SumRange(1, 1))
-	// fmt.Println(obj.SumRange(0, 1))
-	// obj.Update(1, -3)
-	// fmt.Println(obj.SumRange(0, 1))
-
-	root := &TreeNode{Val: 2}
-	// root.Left = &TreeNode{Val: 2}
-	root.Left = &TreeNode{Val: 3}
-	// root.Left.Left = &TreeNode{Val: 1}
-	// root.Left.Right = &TreeNode{Val: 8}
-	root.Left.Left = &TreeNode{Val: 1}
-
-	obj := Constructor353(3, 3, [][]int{{0, 1}, {0, 2}, {1, 2}, {2, 2}, {2, 1}, {2, 0}, {1, 0}})
-
-	fmt.Println(obj.Move("R"))
-	fmt.Println(obj.Move("R"))
-	fmt.Println(obj.Move("D"))
-	fmt.Println(obj.Move("D"))
-	fmt.Println(obj.Move("L"))
-	fmt.Println(obj.Move("L"))
-	fmt.Println(obj.Move("U"))
-	fmt.Println(obj.Move("U"))
-	fmt.Println(obj.Move("R"))
-	fmt.Println(obj.Move("R"))
-	fmt.Println(obj.Move("D"))
-	fmt.Println(obj.Move("D"))
-	fmt.Println(obj.Move("L"))
-	fmt.Println(obj.Move("L"))
-	fmt.Println(obj.Move("U"))
-	fmt.Println(obj.Move("R"))
-	fmt.Println(obj.Move("U"))
-	fmt.Println(obj.Move("L"))
-	fmt.Println(obj.Move("D"))
+	fmt.Println(isReflected([][]int{{-16, 1}, {16, 1}, {16, 1}}))
 }
 
 func powerTrue(k int) bool {
