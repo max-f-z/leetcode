@@ -6,7 +6,15 @@ import (
 )
 
 func main() {
-	fmt.Println(maxKilledEnemies([][]byte{{'0', 'E', '0', '0'}, {'E', '0', 'W', 'E'}, {'0', 'E', '0', '0'}}))
+	obj := Constructor362()
+	obj.Hit(1)
+	obj.Hit(2)
+	obj.Hit(3)
+
+	fmt.Println(obj.GetHits((4)))
+	obj.Hit(300)
+	fmt.Println(obj.GetHits(300))
+	fmt.Println(obj.GetHits(301))
 }
 
 func powerTrue(k int) bool {
