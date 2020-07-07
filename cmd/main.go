@@ -6,13 +6,11 @@ import (
 )
 
 func main() {
-	root := &TreeNode{Val: 1}
-	root.Left = &TreeNode{Val: 2}
-	root.Right = &TreeNode{Val: 3}
-	root.Left.Left = &TreeNode{Val: 4}
-	root.Left.Right = &TreeNode{Val: 5}
+	root := &ListNode{Val: 9}
+	root.Next = &ListNode{Val: 9}
+	root.Next.Next = &ListNode{Val: 9}
 
-	fmt.Println(findLeaves(root))
+	fmt.Println(plusOne(root))
 }
 
 func powerTrue(k int) bool {
