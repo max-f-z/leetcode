@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(isReflected([][]int{{-16, 1}, {16, 1}, {16, 1}}))
+	fmt.Println(rearrangeString("a", 0))
 }
 
 func powerTrue(k int) bool {
