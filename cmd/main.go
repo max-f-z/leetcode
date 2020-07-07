@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(rearrangeString("a", 0))
+	fmt.Println(sortTransformedArray([]int{-4, -2, 2, 4}, 0, -1, 5))
 }
 
 func powerTrue(k int) bool {
