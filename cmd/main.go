@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(sortTransformedArray([]int{-4, -2, 2, 4}, 0, -1, 5))
+	fmt.Println(maxKilledEnemies([][]byte{{'0', 'E', '0', '0'}, {'E', '0', 'W', 'E'}, {'0', 'E', '0', '0'}}))
 }
 
 func powerTrue(k int) bool {
