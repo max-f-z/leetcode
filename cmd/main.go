@@ -6,15 +6,13 @@ import (
 )
 
 func main() {
-	obj := Constructor362()
-	obj.Hit(1)
-	obj.Hit(2)
-	obj.Hit(3)
+	root := &TreeNode{Val: 1}
+	root.Left = &TreeNode{Val: 2}
+	root.Right = &TreeNode{Val: 3}
+	root.Left.Left = &TreeNode{Val: 4}
+	root.Left.Right = &TreeNode{Val: 5}
 
-	fmt.Println(obj.GetHits((4)))
-	obj.Hit(300)
-	fmt.Println(obj.GetHits(300))
-	fmt.Println(obj.GetHits(301))
+	fmt.Println(findLeaves(root))
 }
 
 func powerTrue(k int) bool {
