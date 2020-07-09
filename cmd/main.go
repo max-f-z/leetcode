@@ -10,7 +10,9 @@ func main() {
 	root.Next = &ListNode{Val: 9}
 	root.Next.Next = &ListNode{Val: 9}
 
-	fmt.Println(plusOne(root))
+	fmt.Println('1', '9', '0')
+
+	fmt.Println(validWordAbbreviation("hi", "2i"))
 }
 
 func powerTrue(k int) bool {
