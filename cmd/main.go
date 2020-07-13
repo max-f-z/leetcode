@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println('1', '9', '0')
 
-	fmt.Println(validWordAbbreviation("hi", "2i"))
+	fmt.Println(wordsTyping([]string{"f", "p", "a"}, 8, 7))
 }
 
 func powerTrue(k int) bool {
