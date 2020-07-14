@@ -6,13 +6,15 @@ import (
 )
 
 func main() {
-	root := &ListNode{Val: 9}
-	root.Next = &ListNode{Val: 9}
-	root.Next.Next = &ListNode{Val: 9}
+	root := &Node{Val: -1}
+	// root.Left = &Node{Val: 2}
+	root.Right = &Node{Val: 1}
+	// root.Left.Left = &Node{Val: 1}
+	// root.Left.Right = &Node{Val: 3}
+	root.Right.Right = &Node{Val: 9}
 
-	fmt.Println('a')
-
-	fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
+	fmt.Println(treeToDoublyList(root))
+	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
 func powerTrue(k int) bool {
