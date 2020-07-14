@@ -10,9 +10,9 @@ func main() {
 	root.Next = &ListNode{Val: 9}
 	root.Next.Next = &ListNode{Val: 9}
 
-	fmt.Println('1', '9', '0')
+	fmt.Println('a')
 
-	fmt.Println(wordsTyping([]string{"f", "p", "a"}, 8, 7))
+	fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
 func powerTrue(k int) bool {
