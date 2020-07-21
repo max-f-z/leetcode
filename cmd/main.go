@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// F?1:T?4:5
-	fmt.Println(sequenceReconstruction([]int{1}, [][]int{{2}}))
+	fmt.Println(minTransfers([][]int{{2, 0, 5}, {4, 3, 4}}))
 	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
