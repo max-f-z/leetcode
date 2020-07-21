@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// F?1:T?4:5
-	fmt.Println(findPermutation("I"))
+	fmt.Println(findMaxConsecutiveOnes([]int{1, 0, 1, 1, 0}))
 	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
