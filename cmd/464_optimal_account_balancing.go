@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -14,18 +13,14 @@ func minTransfers(transactions [][]int) int {
 	}
 
 	bal := []int{}
-
 	for _, v := range tmp {
 		if v != 0 {
 			bal = append(bal, v)
 		}
 	}
-
 	if len(bal) == 0 {
 		return 0
 	}
-
-	fmt.Println(bal)
 
 	return minTransfersDFS(0, bal)
 }
@@ -47,8 +42,6 @@ func minTransfersDFS(start int, bal []int) int {
 
 	for i := start + 1; i < len(bal); i++ {
 		bal[i] += bal[start]
-
-		fmt.Println(bal)
 
 		tmp := minTransfersDFS(start+1, bal)
 		if tmp+1 < res {

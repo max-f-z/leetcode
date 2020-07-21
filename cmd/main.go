@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// F?1:T?4:5
-	fmt.Println(minTransfers([][]int{{2, 0, 5}, {4, 3, 4}}))
+	fmt.Println(findPermutation("I"))
 	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
