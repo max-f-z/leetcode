@@ -7,7 +7,8 @@ import (
 
 func main() {
 	// F?1:T?4:5
-	fmt.Println(findMaxConsecutiveOnes([]int{1, 0, 1, 1, 0}))
+	maze := [][]int{{0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 1, 0}, {1, 1, 0, 1, 1}, {0, 0, 0, 0, 0}}
+	fmt.Println(hasPath(maze, []int{0, 4}, []int{4, 4}))
 	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
