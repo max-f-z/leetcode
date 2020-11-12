@@ -2,15 +2,22 @@ package main
 
 import "sort"
 
-func combinationSum(candidates []int, target int) [][]int {
+func combinationSum2(candidates []int, target int) [][]int {
 	sort.Ints(candidates)
-	return combinationSumHelper(candidates, target)
+	return combinationSum2Helper(candidates, target)
 }
 
-func combinationSumHelper(candidates []int, target int) [][]int {
+func combinationSum2Helper(candidates []int, target int) [][]int {
 	res := [][]int{}
-
+	tmp := 0
 	for i, v := range candidates {
+
+		// 关键步骤 去重
+		if tmp == v {
+			continue
+		}
+		tmp = v
+
 		newT := target - v
 
 		if newT == 0 {
@@ -22,7 +29,7 @@ func combinationSumHelper(candidates []int, target int) [][]int {
 		}
 
 		// candidates[i:] 关键步骤 去重
-		subRes := combinationSumHelper(candidates[i:], newT)
+		subRes := combinationSum2Helper(candidates[(i+1):], newT)
 
 		for _, sr := range subRes {
 			res = append(res, append(sr, v))
