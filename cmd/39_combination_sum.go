@@ -21,6 +21,7 @@ func combinationSumHelper(candidates []int, target int) [][]int {
 			continue
 		}
 
+		// candidates[i:] 关键步骤 去重
 		subRes := combinationSum(candidates[i:], newT)
 
 		for _, sr := range subRes {
