@@ -1,81 +1,90 @@
 package main
 
-import (
-	"strings"
-)
+import "strings"
 
 func fullJustify(words []string, maxWidth int) []string {
 	res := []string{}
 
 	idx := 0
 	tmp := ""
-
-	for idx < len(words)+1 {
-		idx, tmp = fullJustifyHelper(words, maxWidth, idx)
+	for idx < len(words) {
+		idx, tmp = fullJustifyHelper(words, idx, maxWidth)
 		res = append(res, tmp)
 	}
 
 	return res
 }
 
-func fullJustifyHelper(words []string, maxWidth int, start int) (int, string) {
-	l := 0
-	strB := strings.Builder{}
+func fullJustifyHelper(words []string, start int, maxWidth int) (int, string) {
+	res := []string{}
+	sumL := 0
 	idx := start
-	breaks := []string{}
-	remain := false
 
-	for idx = start; idx < len(words); idx++ {
-		if l+len(words[idx])+1 <= maxWidth+1 {
-			l += len(words[idx]) + 1
-			breaks = append(breaks, " ")
+	for i := idx; i < len(words); i++ {
+		if len(res) == 0 {
+			res = append(res, words[i])
+			sumL += len(words[i])
 			continue
 		}
-		remain = true
-		break
+
+		if len(res)+sumL+len(words[i]) <= maxWidth {
+			res = append(res, words[i])
+			sumL += len(words[i])
+			idx = i
+			continue
+		}
+
+		if len(res)+sumL+len(words[i]) > maxWidth {
+			break
+		}
 	}
 
-	if !remain {
-		l = 0
-		for i := start; i < len(words); i++ {
-			strB.WriteString(words[i])
-			l += len(words[i])
-			if l+1 <= maxWidth {
-				strB.WriteString(" ")
-				l++
+	sb := strings.Builder{}
+	if idx != len(words)-1 {
+		var breaks []string
+
+		if len(res) > 1 {
+			breaks = make([]string, len(res)-1)
+		} else {
+			breaks = make([]string, 1)
+		}
+
+		cursor := 0
+		for i := sumL; i < maxWidth; i++ {
+			if cursor < len(res)-1 {
+				breaks[cursor] = breaks[cursor] + " "
+				cursor++
+				continue
+			}
+
+			cursor = 0
+			breaks[cursor] = breaks[cursor] + " "
+			cursor++
+		}
+
+		for i := 0; i < len(res); i++ {
+			sb.WriteString(res[i])
+			if i < len(res)-1 {
+				sb.WriteString(breaks[i])
 			}
 		}
 
-		for l < maxWidth {
-			strB.WriteString(" ")
-			l++
-		}
-		return len(words) + 1, strB.String()
-	}
-
-	l--
-	breaks[len(breaks)-1] = ""
-	if len(breaks) == 1 {
-		strB.WriteString(words[start])
-		for i := 0; i < maxWidth-len(words[start]); i++ {
-			strB.WriteString(" ")
+		if len(res) == 1 {
+			sb.WriteString(breaks[0])
 		}
 	} else {
-		cursor := 0
-		for (l + 1) <= maxWidth {
-			if cursor == len(breaks)-1 {
-				cursor = 0
+		for i := 0; i < len(res); i++ {
+			sb.WriteString(res[i])
+			if sumL+1 <= maxWidth {
+				sumL++
+				sb.WriteString(" ")
 			}
-			breaks[cursor] = breaks[cursor] + " "
-			l++
-			cursor++
-
 		}
 
-		for i := 0; i < len(breaks); i++ {
-			strB.WriteString(words[start+i])
-			strB.WriteString(breaks[i])
+		for i := sumL; i < maxWidth; i++ {
+			sb.WriteString(" ")
 		}
 	}
-	return idx, strB.String()
+
+	return idx + 1, sb.String()
 }
