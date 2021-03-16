@@ -1,43 +1,35 @@
 package main
 
+import (
+	"container/list"
+)
+
 type HitCounter struct {
-	data []int
+	stack *list.List
 }
 
 func Constructor362() HitCounter {
 	hc := HitCounter{}
-	hc.data = []int{}
+	hc.stack = list.New().Init()
 	return hc
 }
 
 func (this *HitCounter) Hit(timestamp int) {
-	idx := -1
-	for i := 0; i < len(this.data); i++ {
-		if this.data[i] < timestamp-300 {
-			idx = i
-		} else {
-			break
-		}
-	}
-	if idx != -1 {
-		this.data = this.data[idx+1:]
-	}
-
-	this.data = append(this.data, timestamp)
+	this.stack.PushBack(timestamp)
 }
 
 func (this *HitCounter) GetHits(timestamp int) int {
-	idx := -1
-	for i := 0; i < len(this.data); i++ {
-		if this.data[i] <= timestamp-300 {
-			idx = i
+	for {
+		if this.stack.Len() == 0 {
+			break
+		}
+		val := this.stack.Front().Value.(int)
+		if timestamp-300 >= val {
+			this.stack.Remove(this.stack.Front())
 		} else {
 			break
 		}
 	}
-	if idx != -1 {
-		this.data = this.data[idx+1:]
-	}
 
-	return len(this.data)
+	return this.stack.Len()
 }
