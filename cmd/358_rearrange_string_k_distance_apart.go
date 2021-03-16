@@ -10,29 +10,29 @@ type maxHeapEl struct {
 	count int
 }
 
-type maxHeap []maxHeapEl
+type maxHeap358 []maxHeapEl
 
-func (h maxHeap) Len() int {
+func (h maxHeap358) Len() int {
 	return len(h)
 }
 
-func (h maxHeap) Less(i, j int) bool {
+func (h maxHeap358) Less(i, j int) bool {
 	if h[i].count != h[j].count {
 		return h[i].count > h[j].count
 	}
 	return h[i].char < h[j].char
 }
 
-func (h maxHeap) Swap(i, j int) {
+func (h maxHeap358) Swap(i, j int) {
 	h[i], h[j] = h[j], h[i]
 }
 
-func (h *maxHeap) Push(x interface{}) {
+func (h *maxHeap358) Push(x interface{}) {
 	v, _ := x.(maxHeapEl)
 	*h = append(*h, v)
 }
 
-func (h *maxHeap) Pop() (v interface{}) {
+func (h *maxHeap358) Pop() (v interface{}) {
 	v, *h = (*h)[len(*h)-1], (*h)[:len(*h)-1]
 	return v
 }
@@ -48,7 +48,7 @@ func rearrangeString(s string, k int) string {
 		chars[s[i]]++
 	}
 
-	mh := &maxHeap{}
+	mh := &maxHeap358{}
 	heap.Init(mh)
 
 	for k, v := range chars {
