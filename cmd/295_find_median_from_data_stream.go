@@ -93,3 +93,30 @@ func (this *MedianFinder) FindMedian() float64 {
 
 	return float64(this.small.Top()+this.big.Top()) * 0.5
 }
+
+// o(n)
+func (this *MedianFinder) Remove(num int) {
+
+	found := false
+	for i := 0; i < this.small.Len(); i++ {
+		if (*this.small)[i] == num {
+			heap.Remove(this.small, i)
+			found = true
+			break
+		}
+	}
+
+	if !found {
+		for i := 0; i < this.big.Len(); i++ {
+			if (*this.big)[i] == num {
+				heap.Remove(this.big, i)
+				break
+			}
+		}
+	}
+
+	if this.small.Len() < this.big.Len() {
+		heap.Push(this.small, this.big.Top())
+		heap.Pop(this.big)
+	}
+}
