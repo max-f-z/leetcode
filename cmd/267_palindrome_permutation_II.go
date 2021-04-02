@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // https://www.youtube.com/watch?v=Vbcl5jmm05E
 
 func generatePalindromes(s string) []string {
@@ -55,7 +57,7 @@ func generatePalindromesHelper(res *[]string, dict []int, tmp string, n int) {
 		if dict[k] > 0 {
 			dict[k] -= 2
 
-			generatePalindromesHelper(res, dict, string(k)+tmp+string(k), n)
+			generatePalindromesHelper(res, dict, fmt.Sprint(k)+tmp+fmt.Sprint(k), n)
 
 			dict[k] += 2
 		}
