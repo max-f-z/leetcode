@@ -47,3 +47,42 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 
 	return dummy.Next
 }
+
+func practice21(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil && l2 == nil {
+		return nil
+	}
+	dummy := &ListNode{}
+
+	head := dummy
+
+	for {
+		if l1 == nil && l2 == nil {
+			break
+		}
+
+		if l1 == nil {
+			head.Next = l2
+			head = head.Next
+			l2 = l2.Next
+		}
+
+		if l2 == nil {
+			head.Next = l1
+			head = head.Next
+			l2 = l1.Next
+		}
+
+		if l1.Val <= l2.Val {
+			head.Next = l1
+			head = head.Next
+			l1 = l1.Next
+		} else {
+			head.Next = l2
+			head = head.Next
+			l2 = l2.Next
+		}
+	}
+
+	return dummy.Next
+}
