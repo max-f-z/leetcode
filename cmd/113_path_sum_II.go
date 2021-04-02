@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func pathSum(root *TreeNode, targetSum int) [][]int {
 	return pathSumHelper(root, targetSum, []int{})
 }
@@ -35,4 +37,41 @@ func pathSumHelper(root *TreeNode, targetSum int, prev []int) [][]int {
 	}
 
 	return ans
+}
+
+func ans(pairs [][]int, a int, b int) ([]int, []int) {
+	parents := map[int][]int{}
+	for _, v := range pairs {
+		if parents[v[1]] == nil || len(parents[v[1]]) == 0 {
+			parents[v[1]] = []int{v[0]}
+		} else {
+			parents[v[1]] = append(parents[v[1]], v[0])
+		}
+	}
+
+	for k := range parents {
+		fmt.Println(k, parents[k])
+	}
+
+	fmt.Println(findEarliest(parents, 1))
+
+	return nil, nil
+}
+
+func findEarliest(parents map[int][]int, val int) (int, int) {
+
+	if parents[val] != nil && len(parents[val]) != 0 {
+		max := 0
+		ans := 0
+		for _, v := range parents[val] {
+			n, newVal := findEarliest(parents, v)
+			if n > max {
+				max = n
+				ans = newVal
+			}
+		}
+		return max + 1, ans
+	}
+
+	return 1, val
 }
