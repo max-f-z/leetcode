@@ -6,43 +6,36 @@ type Node struct {
 	Right *Node
 }
 
+var head *Node
+var cur *Node
+
 func treeToDoublyList(root *Node) *Node {
-	sol := Solution{}
-	return sol.Run(root)
-}
-
-type Solution struct {
-	prev       *Node
-	head, tail *Node
-}
-
-func (s *Solution) Run(root *Node) *Node {
 	if root == nil {
-		return root
+		return nil
 	}
-	s.helper(root)
-	s.head.Left = s.tail
-	s.tail.Right = s.head
-	return s.head
+
+	head = nil
+	cur = nil
+	treeToDoublyListHelper(root)
+
+	head.Left = cur
+	cur.Right = head
+
+	return head
 }
 
-func (s *Solution) helper(root *Node) {
-	if root == nil {
-		return
+func treeToDoublyListHelper(node *Node) {
+	if node != nil {
+		treeToDoublyListHelper(node.Left)
+
+		if head == nil {
+			head = node
+			cur = node
+		} else {
+			cur.Right = node
+			node.Left = cur
+			cur = node
+		}
+		treeToDoublyListHelper(node.Right)
 	}
-	s.helper(root.Left)
-	// find head and tail
-	if root.Left == nil && s.head == nil {
-		s.head = root
-	}
-	if root.Right == nil {
-		s.tail = root
-	}
-	// compose linked list
-	root.Left = s.prev
-	if s.prev != nil {
-		s.prev.Right = root
-	}
-	s.prev = root
-	s.helper(root.Right)
 }
