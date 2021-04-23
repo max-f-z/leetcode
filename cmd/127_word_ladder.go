@@ -51,12 +51,20 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 	if len(queue) == 0 {
 		for i := 0; i < l; i++ {
 			if wordLadderHelper(beginWord, wordList[i]) {
+				if wordList[i] == endWord {
+					return 2
+				}
+
 				queue = append(queue, i)
 			}
 		}
 		step++
 	}
-out:
+
+	if len(queue) == 0 {
+		return 0
+	}
+
 	for len(queue) > 0 {
 		step++
 		newQ := []int{}
@@ -65,7 +73,7 @@ out:
 			for j := 0; j < l; j++ {
 				if graph[queue[i]][j] == 1 && !visited[j] {
 					if wordList[j] == endWord {
-						break out
+						return step + 1
 					}
 					newQ = append(newQ, j)
 					visited[j] = true
@@ -75,7 +83,7 @@ out:
 
 		queue = newQ
 	}
-	return step + 1
+	return 0
 }
 
 func wordLadderHelper(s1, s2 string) bool {
