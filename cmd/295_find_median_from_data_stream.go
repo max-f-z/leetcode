@@ -4,8 +4,6 @@ import "container/heap"
 
 type minHeap []int
 
-type maxHeap []int
-
 func (h minHeap) Less(i, j int) bool {
 	return h[i] < h[j]
 }
@@ -30,6 +28,8 @@ func (h *minHeap) Pop() (v interface{}) {
 func (h *minHeap) Top() int {
 	return (*h)[0]
 }
+
+type maxHeap []int
 
 func (h maxHeap) Less(i, j int) bool {
 	return h[i] > h[j]
