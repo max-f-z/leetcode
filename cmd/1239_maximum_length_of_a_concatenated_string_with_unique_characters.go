@@ -9,7 +9,7 @@ func checkUnique(s string) bool {
 			return false
 		}
 	}
-	return truef
+	return true
 }
 
 func maxLength(arr []string) int {
