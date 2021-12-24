@@ -47,3 +47,42 @@ func merge56(intervals [][]int) [][]int {
 
 	return res
 }
+
+func merge56_2(intervals [][]int) [][]int {
+	sort.Slice(intervals, func(i, j int) bool {
+		if intervals[i][0] != intervals[j][0] {
+			return intervals[i][0] < intervals[j][0]
+		}
+		return intervals[i][1] < intervals[j][1]
+	})
+
+	ans := [][]int{}
+
+	start := -1
+	end := -1
+	for i := 0; i < len(intervals); i++ {
+		if i == 0 {
+			start = intervals[i][0]
+			end = intervals[i][1]
+			continue
+		}
+
+		if end < intervals[i][0] {
+			ans = append(ans, []int{start, end})
+			start = intervals[i][0]
+			end = intervals[i][1]
+			continue
+		}
+
+		if end >= intervals[i][0] {
+			if intervals[i][1] > end {
+				end = intervals[i][1]
+			}
+			continue
+		}
+	}
+
+	ans = append(ans, []int{start, end})
+
+	return ans
+}
