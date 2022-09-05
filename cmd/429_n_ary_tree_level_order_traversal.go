@@ -25,9 +25,7 @@ func levelOrder(root *Node429) [][]int {
 		level := []int{}
 		for _, node := range queue {
 			if node.Children != nil && len(node.Children) > 0 {
-				for _, child := range node.Children {
-					newQ = append(newQ, child)
-				}
+				newQ = append(newQ, node.Children...)
 			}
 			level = append(level, node.Val)
 		}
