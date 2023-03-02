@@ -105,3 +105,65 @@ func wordLadderHelper(s1, s2 string) bool {
 
 	return true
 }
+
+func ladderLengthPlus(beginWord string, endWord string, wordList []string) int {
+	steps := 1
+
+	currentWords := []string{beginWord}
+
+	exists := false
+
+	dict := map[string]bool{}
+
+	for _, word := range wordList {
+		if word == endWord {
+			exists = true
+		}
+		dict[word] = true
+	}
+
+	if !exists {
+		return 0
+	}
+
+	for len(currentWords) > 0 {
+		nextWords := []string{}
+
+		for _, v := range currentWords {
+			if v == endWord {
+				return steps
+			}
+
+			delete(dict, v)
+
+			for k, vv := range dict {
+				if vv && canTransform(k, v) {
+					delete(dict, k)
+					nextWords = append(nextWords, k)
+				}
+			}
+		}
+
+		steps++
+
+		currentWords = nextWords
+	}
+
+	return 0
+}
+
+func canTransform(s1, s2 string) bool {
+	if len(s1) != len(s2) {
+		return false
+	}
+
+	n := len(s1)
+	cnt := 0
+	for i := 0; i < n; i++ {
+		if s1[i] != s2[i] {
+			cnt++
+		}
+	}
+
+	return cnt == 1
+}
