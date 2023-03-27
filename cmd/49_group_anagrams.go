@@ -39,3 +39,30 @@ func groupAnagrams(strs []string) [][]string {
 
 	return ans
 }
+
+func groupAnagramsRefactor(strs []string) [][]string {
+	groups := map[[26]int][]string{}
+
+	for _, str := range strs {
+		cnt := [26]int{}
+
+		for i := 0; i < len(str); i++ {
+			cnt[str[i]-'a'] += 1
+		}
+
+		if groups[cnt] == nil {
+			groups[cnt] = []string{str}
+		} else {
+			groups[cnt] = append(groups[cnt], str)
+		}
+	}
+
+	ans := make([][]string, len(groups))
+	idx := 0
+	for _, v := range groups {
+		ans[idx] = v
+		idx++
+	}
+
+	return ans
+}
