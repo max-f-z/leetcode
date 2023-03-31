@@ -31,3 +31,47 @@ func combinationSumHelper(candidates []int, target int) [][]int {
 
 	return res
 }
+
+type combinationSumType struct {
+	candidates []int
+	min        int
+	res        [][]int
+}
+
+func combinationSumII(candidates []int, target int) [][]int {
+	min := 50
+
+	for i := 0; i < len(candidates); i++ {
+		if candidates[i] < min {
+			min = candidates[i]
+		}
+	}
+
+	cst := &combinationSumType{
+		candidates: candidates,
+		res:        [][]int{},
+		min:        min,
+	}
+
+	cst.helper(target, []int{}, 0)
+
+	return cst.res
+}
+
+func (cst *combinationSumType) helper(remain int, prefix []int, start int) {
+	if remain == 0 {
+		ans := make([]int, len(prefix))
+		copy(ans, prefix)
+		cst.res = append(cst.res, ans)
+	}
+
+	if remain < cst.min {
+		return
+	}
+
+	for i := start; i < len(cst.candidates); i++ {
+		prefix = append(prefix, cst.candidates[i])
+		cst.helper(remain-cst.candidates[i], prefix, i)
+		prefix = prefix[:len(prefix)-1]
+	}
+}
