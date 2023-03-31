@@ -33,3 +33,46 @@ func removeFromSlice43(nums []int, idx int) []int {
 	res = append(res, nums[idx+1:]...)
 	return res
 }
+
+type permuteType struct {
+	res   [][]int
+	usage map[int]int
+	nums  []int
+}
+
+func permuteRefactor(nums []int) [][]int {
+	usage := map[int]int{}
+
+	for i := 0; i < len(nums); i++ {
+		usage[nums[i]] = 0
+	}
+
+	pt := &permuteType{
+		res:   [][]int{},
+		nums:  nums,
+		usage: usage,
+	}
+
+	pt.permuteHelper([]int{})
+
+	return pt.res
+}
+
+func (pt *permuteType) permuteHelper(prefix []int) {
+	if len(prefix) == len(pt.nums) {
+		ans := make([]int, len(pt.nums))
+		copy(ans, prefix)
+		pt.res = append(pt.res, ans)
+		return
+	}
+
+	for k, v := range pt.usage {
+		if v == 0 {
+			pt.usage[k] = 1
+			prefix = append(prefix, k)
+			pt.permuteHelper(prefix)
+			pt.usage[k] = 0
+			prefix = prefix[:len(prefix)-1]
+		}
+	}
+}
