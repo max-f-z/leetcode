@@ -29,7 +29,7 @@ func gen(start, end int, cache map[position][]*TreeNode) []*TreeNode {
 
 	if start == end { // one node
 		return []*TreeNode{
-			&TreeNode{
+			{
 				Val: start,
 			},
 		}

@@ -8,7 +8,7 @@ func wordBreak(s string, wordDict []string) bool {
 	dp[0] = true
 
 	for i := 1; i < len(s)+1; i++ {
-		if dp[i-1] == false {
+		if !dp[i-1] {
 			continue
 		}
 		for _, v := range wordDict {
