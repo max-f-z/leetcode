@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func canPermutePalindrome(s string) bool {
 	dict := make(map[byte]int, 0)
 

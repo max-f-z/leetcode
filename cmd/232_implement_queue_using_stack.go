@@ -14,6 +14,7 @@ func Constructor232() MyQueue {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *MyQueue) Push(x int) {
 	if this.Empty() {
 		this.s1.PushBack(x)
@@ -33,21 +34,21 @@ func (this *MyQueue) Push(x int) {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *MyQueue) Pop() int {
 	val := (this.s1.Back().Value).(int)
 	this.s1.Remove(this.s1.Back())
 	return val
 }
 
+//lint:ignore ST1006 this
 func (this *MyQueue) Peek() int {
 	return this.s1.Back().Value.(int)
 }
 
+//lint:ignore ST1006 this
 func (this *MyQueue) Empty() bool {
-	if this.s1.Len() == 0 {
-		return true
-	}
-	return false
+	return this.s1.Len() == 0
 }
 
 /**

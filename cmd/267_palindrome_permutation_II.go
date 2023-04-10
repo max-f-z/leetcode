@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 // https://www.youtube.com/watch?v=Vbcl5jmm05E
-
+//
+//lint:ignore U1000 unused
 func generatePalindromes(s string) []string {
 	res := make([]string, 0)
 

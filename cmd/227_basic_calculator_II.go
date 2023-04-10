@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func calculate227(s string) int {
 	s = strings.ReplaceAll(s, " ", "")
 

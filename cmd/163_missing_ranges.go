@@ -4,6 +4,7 @@ import (
 	"strconv"
 )
 
+//lint:ignore U1000 unused
 func findMissingRanges(arr []int, lower int, upper int) []string {
 	if len(arr) == 0 {
 		return []string{range2str(lower, upper)}

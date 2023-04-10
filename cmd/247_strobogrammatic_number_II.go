@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findStrobogrammatic(n int) []string {
 
 	return findStrobogrammaticHelper(n, n)

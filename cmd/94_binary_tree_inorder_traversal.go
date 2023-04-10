@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func inorderTraversal(root *TreeNode) []int {
 	res := []int{}
 

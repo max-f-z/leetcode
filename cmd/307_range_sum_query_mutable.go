@@ -39,6 +39,7 @@ func Constructor307(nums []int) NumArray {
 	return n
 }
 
+//lint:ignore ST1006 this
 func (this *NumArray) Update(i int, val int) {
 	updateHelper(i, val, this.root)
 }
@@ -62,6 +63,7 @@ func updateHelper(i int, val int, node *SegmentTreeNode) int {
 	return tmp
 }
 
+//lint:ignore ST1006 this
 func (this *NumArray) SumRange(i int, j int) int {
 	return sumRangeHelper(i, j, this.root)
 }

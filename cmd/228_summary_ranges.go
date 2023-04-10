@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+//lint:ignore U1000 unused
 func summaryRanges(nums []int) []string {
 	res := []string{}
 

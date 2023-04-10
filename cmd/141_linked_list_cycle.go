@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func hasCycle(head *ListNode) bool {
 	p1, p2 := head, head
 

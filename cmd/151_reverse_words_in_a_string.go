@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func reverseWords151(s string) string {
 	strs := strings.Split(s, " ")
 

@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func shortestWordDistance(words []string, word1 string, word2 string) int {
 	if len(words) == 2 {
 		return 1

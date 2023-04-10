@@ -5,7 +5,8 @@ import (
 )
 
 // https://www.youtube.com/watch?v=ZU7fiX0WCCY
-
+//
+//lint:ignore U1000 unused
 func alienOrder(words []string) string {
 	parent := make(map[byte]byte, 0)
 

@@ -1,7 +1,8 @@
 package main
 
 // https://www.youtube.com/watch?v=n_t0a_8H8VY
-
+//
+//lint:ignore U1000 unused
 func validTree(n int, edges [][]int) bool {
 	graph := make(map[int][]int)
 

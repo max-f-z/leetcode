@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isStrobogrammatic(num string) bool {
 	dict := map[string]byte{
 		"0": '0',

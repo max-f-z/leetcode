@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func wordPatternMatch(pattern string, str string) bool {
 	keys := map[string]string{}
 	vals := map[string]string{}

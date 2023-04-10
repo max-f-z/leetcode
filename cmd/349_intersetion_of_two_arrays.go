@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func intersection(nums1 []int, nums2 []int) []int {
 	resM := map[int]bool{}
 

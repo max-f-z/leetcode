@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func reverseBetween(head *ListNode, left int, right int) *ListNode {
 
 	dummy := &ListNode{}

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func ladderLength(beginWord string, endWord string, wordList []string) int {
 	l := len(wordList)
 

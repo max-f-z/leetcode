@@ -45,6 +45,7 @@ func (u *UnionFind) Count() int {
 	return u.count
 }
 
+//lint:ignore U1000 unused
 func numIslands2(m int, n int, positions [][]int) []int {
 	uf := CreateUnionFind(m, n)
 	islands := make([][]bool, m)
@@ -78,8 +79,8 @@ func numIslands2(m int, n int, positions [][]int) []int {
 }
 
 var directions = [][]int{
-	[]int{1, 0},
-	[]int{-1, 0},
-	[]int{0, 1},
-	[]int{0, -1},
+	{1, 0},
+	{-1, 0},
+	{0, 1},
+	{0, -1},
 }

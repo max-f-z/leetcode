@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func countUnivalSubtrees(root *TreeNode) int {
 	if root == nil {
 		return 0

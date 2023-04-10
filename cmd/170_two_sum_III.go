@@ -14,12 +14,14 @@ func Constructor1() TwoSum {
 }
 
 /** Add the number to an internal data structure.. */
+//lint:ignore ST1006 this
 func (this *TwoSum) Add(number int) {
 	this.times[number]++
 	this.data = append(this.data, number)
 }
 
 /** Find if there exists any pair of numbers which sum is equal to the value. */
+//lint:ignore ST1006 this
 func (this *TwoSum) Find(value int) bool {
 	for _, v := range this.data {
 		remain := value - v

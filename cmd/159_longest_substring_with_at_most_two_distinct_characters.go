@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func lengthOfLongestSubstringTwoDistinct(s string) int {
 	max := 0
 

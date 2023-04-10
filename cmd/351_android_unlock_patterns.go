@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func numberOfPatterns(m int, n int) int {
 	p := 0
 	dfs(m, n, 0, -1, 1, make([]bool, 10), &p)

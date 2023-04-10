@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+//lint:ignore U1000 unused
 func generateAbbreviations(word string) []string {
 	res := []string{}
 	generateAbbreviationsHelper(word, 0, "", &res)

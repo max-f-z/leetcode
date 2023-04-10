@@ -3,6 +3,7 @@ package main
 var idx map[int]int
 var pIdx int
 
+//lint:ignore U1000 unused
 func buildTree(preorder []int, inorder []int) *TreeNode {
 	idx = map[int]int{}
 	pIdx = 0

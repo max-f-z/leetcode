@@ -18,6 +18,7 @@ func ConstructorWD() WordDictionary {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *WordDictionary) AddWord(word string) {
 	ptr := this.root
 	for i := 0; i < len(word); i++ {
@@ -53,6 +54,7 @@ func searchWord(i int, word string, root *TN) bool {
 	return false
 }
 
+//lint:ignore ST1006 this
 func (this *WordDictionary) Search(word string) bool {
 	return searchWord(0, word, this.root)
 }

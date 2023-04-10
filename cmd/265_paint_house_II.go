@@ -4,7 +4,8 @@ import "math"
 
 // dp 公式同 256 paint house
 // 对于每一行，保留最小的两个cost
-
+//
+//lint:ignore U1000 unused
 func minCostII(costs [][]int) int {
 	if len(costs) == 0 || len(costs[0]) == 0 {
 		return 0

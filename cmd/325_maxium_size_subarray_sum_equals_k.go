@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func maxSubArrayLen(nums []int, k int) int {
 	record := map[int]int{}
 	record[0] = -1

@@ -45,14 +45,13 @@ func Constructor341(nestedList []*NestedInteger) *NestedIterator {
 	return &n
 }
 
+//lint:ignore ST1006 this
 func (this *NestedIterator) Next() int {
 	this.idx++
 	return this.vals[this.idx]
 }
 
+//lint:ignore ST1006 this
 func (this *NestedIterator) HasNext() bool {
-	if this.idx+1 < len(this.vals) {
-		return true
-	}
-	return false
+	return this.idx+1 < len(this.vals)
 }

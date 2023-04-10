@@ -24,6 +24,7 @@ func Constructor288(dictionary []string) ValidWordAbbr {
 	return dict
 }
 
+//lint:ignore ST1006 this
 func (this *ValidWordAbbr) IsUnique(word string) bool {
 	found := false
 

@@ -12,7 +12,7 @@ package main
  * read4(buf) // read4 returns 4. Now buf = ['e','f','g','h'], fp points to 'i'
  * read4(buf) // read4 returns 3. Now buf = ['i','j','k',...], fp points to end of file
  */
-
+//lint:ignore U1000 unused
 var solution = func(read4 func([]byte) int) func([]byte, int) int {
 	// implement read below.
 	return func(buf []byte, n int) int {

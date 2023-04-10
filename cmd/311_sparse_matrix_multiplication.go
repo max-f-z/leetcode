@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func multiply(A [][]int, B [][]int) [][]int {
 	res := make([][]int, len(A))
 

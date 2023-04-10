@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func solution2(knows func(a int, b int) bool) func(n int) int {
 	return func(n int) int {
 

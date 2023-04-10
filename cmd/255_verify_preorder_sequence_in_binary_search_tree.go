@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func verifyPreorder(preorder []int) bool {
 	return verifyPreorderHelper(preorder, 0, len(preorder)-1, math.MinInt32, math.MaxInt32)
 }

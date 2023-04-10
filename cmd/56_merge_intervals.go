@@ -49,6 +49,7 @@ func merge56(intervals [][]int) [][]int {
 	return res
 }
 
+//lint:ignore U1000 unused
 func merge56_2(intervals [][]int) [][]int {
 	sort.Slice(intervals, func(i, j int) bool {
 		if intervals[i][0] != intervals[j][0] {

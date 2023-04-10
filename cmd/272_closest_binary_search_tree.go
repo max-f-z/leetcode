@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func closestKValues(root *TreeNode, target float64, k int) []int {
 	res := make([]int, k)
 

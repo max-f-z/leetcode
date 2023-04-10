@@ -10,6 +10,7 @@ func Constructor352() SummaryRanges {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *SummaryRanges) AddNum(value int) {
 	if len(this.ranges) == 0 {
 		this.ranges = [][]int{{value, value}}
@@ -54,6 +55,7 @@ func (this *SummaryRanges) AddNum(value int) {
 	this.ranges = append(this.ranges[:low], append([][]int{{value, value}}, this.ranges[low:]...)...)
 }
 
+//lint:ignore ST1006 this
 func (this *SummaryRanges) GetIntervals() [][]int {
 	return this.ranges
 }

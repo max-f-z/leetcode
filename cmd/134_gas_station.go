@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func canCompleteCircuit(gas []int, cost []int) int {
 	total := 0
 	current := 0

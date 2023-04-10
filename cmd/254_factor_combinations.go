@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func getFactors(n int) [][]int {
 	if n <= 1 {
 		return [][]int{}

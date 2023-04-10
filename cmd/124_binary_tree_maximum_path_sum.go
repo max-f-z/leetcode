@@ -4,6 +4,7 @@ import "math"
 
 var res int
 
+//lint:ignore U1000 unused
 func maxPathSum(root *TreeNode) int {
 	res = int(math.MinInt32)
 

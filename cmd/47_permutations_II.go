@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func permuteUnique(nums []int) [][]int {
 	sort.Ints(nums)
 	return permuteUniqueHelper(nums)

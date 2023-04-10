@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func shortestDistance317(grid [][]int) int {
 	if len(grid) == 0 || len(grid[0]) == 0 {
 		return 0

@@ -75,6 +75,7 @@ func Constructor295() MedianFinder {
 	return mf
 }
 
+//lint:ignore ST1006 this
 func (this *MedianFinder) AddNum(num int) {
 	heap.Push(this.small, num)
 	heap.Push(this.big, this.small.Top())
@@ -86,6 +87,7 @@ func (this *MedianFinder) AddNum(num int) {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *MedianFinder) FindMedian() float64 {
 	if this.small.Len() > this.big.Len() {
 		return float64(this.small.Top())
@@ -95,6 +97,8 @@ func (this *MedianFinder) FindMedian() float64 {
 }
 
 // o(n)
+//
+//lint:ignore ST1006 this
 func (this *MedianFinder) Remove(num int) {
 
 	found := false

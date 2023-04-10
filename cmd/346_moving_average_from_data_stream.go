@@ -8,6 +8,7 @@ type MovingAverage struct {
 }
 
 /** Initialize your data structure here. */
+//lint:ignore U1000 unused
 func Constructor346(size int) MovingAverage {
 	ma := MovingAverage{}
 	ma.data = make([]int, size)
@@ -16,6 +17,7 @@ func Constructor346(size int) MovingAverage {
 	return ma
 }
 
+//lint:ignore ST1006 this
 func (this *MovingAverage) Next(val int) float64 {
 	this.idx++
 	tmp := 0

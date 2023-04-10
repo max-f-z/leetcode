@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 var solution1 = func(read4 func([]byte) int) func([]byte, int) int {
 	// implement read below.
 	pos := 0

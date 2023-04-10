@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func reverseVowels(s string) string {
 	p1, p2 := 0, len(s)-1
 	sb := strings.Builder{}

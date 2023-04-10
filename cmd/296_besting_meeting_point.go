@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func minTotalDistance(grid [][]int) int {
 	h := len(grid)
 	w := len(grid[0])

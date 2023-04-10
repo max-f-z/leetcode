@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isOneEditDistance(s string, t string) bool {
 	if s == t {
 		return false

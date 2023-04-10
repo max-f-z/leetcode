@@ -8,7 +8,7 @@ package main
  *     Right *TreeNode
  * }
  */
-
+//lint:ignore U1000 unused
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	return lowestCommonAncestorHelper(root, p, q)
 }

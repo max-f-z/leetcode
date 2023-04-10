@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func moveZeroes(nums []int) {
 	idx := 0
 

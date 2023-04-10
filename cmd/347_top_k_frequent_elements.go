@@ -7,6 +7,7 @@ type pair struct {
 	cnt int
 }
 
+//lint:ignore U1000 unused
 func topKFrequent(nums []int, k int) []int {
 	m := make(map[int]int)
 	for _, v := range nums {

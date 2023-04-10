@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func canWin(s string) bool {
 	return canWinPlayer1(s)
 }

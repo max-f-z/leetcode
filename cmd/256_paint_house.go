@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minCost(costs [][]int) int {
 	if len(costs) == 0 {
 		return 0

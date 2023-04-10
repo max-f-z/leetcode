@@ -44,9 +44,5 @@ func searchMatrix(matrix [][]int, target int) bool {
 
 	fmt.Println(row, coll, colr)
 
-	if matrix[row][coll] == target {
-		return true
-	}
-
-	return false
+	return matrix[row][coll] == target
 }

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func permute(nums []int) [][]int {
 	if len(nums) == 0 {
 		return [][]int{{}}
@@ -40,6 +41,7 @@ type permuteType struct {
 	nums  []int
 }
 
+//lint:ignore U1000 unused
 func permuteRefactor(nums []int) [][]int {
 	usage := map[int]int{}
 

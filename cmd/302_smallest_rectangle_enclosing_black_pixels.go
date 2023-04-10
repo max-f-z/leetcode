@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func minArea(image [][]byte, x int, y int) int {
 	minX, minY := math.MaxInt32, math.MaxInt32
 	maxX, maxY := -1, -1

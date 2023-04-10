@@ -1,5 +1,6 @@
-package main 
+package main
 
+//lint:ignore U1000 unused
 func numWays(n int, k int) int {
 	dp := make([]int, n+1)
 
@@ -15,7 +16,7 @@ func numWays(n int, k int) int {
 	dp[2] = k * k
 
 	for i := 3; i <= n; i++ {
-		dp[i] = dp[i-1] * (k-1) + dp[i-2] * (k-1)
+		dp[i] = dp[i-1]*(k-1) + dp[i-2]*(k-1)
 	}
 	return dp[n]
 }

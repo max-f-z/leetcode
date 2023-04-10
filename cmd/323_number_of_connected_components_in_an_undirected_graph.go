@@ -38,6 +38,7 @@ func CreateUnionFind323(n int) *UnionFind323 {
 	return uf
 }
 
+//lint:ignore U1000 unused
 func countComponents(n int, edges [][]int) int {
 	uf := CreateUnionFind323(n)
 

@@ -18,6 +18,7 @@ func ConstructorTrie() Trie {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *Trie) Insert(word string) {
 	cur := this.root
 
@@ -35,6 +36,7 @@ func (this *Trie) Insert(word string) {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *Trie) Search(word string) bool {
 	cur := this.root
 
@@ -51,6 +53,7 @@ func (this *Trie) Search(word string) bool {
 	return false
 }
 
+//lint:ignore ST1006 this
 func (this *Trie) StartsWith(prefix string) bool {
 	cur := this.root
 	for i := range prefix {

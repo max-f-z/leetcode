@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func closestValue(root *TreeNode, target float64) int {
 	res := closestValueHelper(root, target, math.MaxInt64)
 	return res

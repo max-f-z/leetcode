@@ -11,6 +11,7 @@ func Constructor2(words []string) WordDistance {
 	return wd
 }
 
+//lint:ignore ST1006 this
 func (this *WordDistance) Shortest(word1 string, word2 string) int {
 	if len(this.data) == 2 {
 		return 1

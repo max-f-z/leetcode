@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func largestBSTSubtree(root *TreeNode) int {
 	res := 0
 	largestBSTSubtreeHelper(&res, root)

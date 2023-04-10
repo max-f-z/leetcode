@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func wordPattern(pattern string, str string) bool {
 	keys := map[string]string{}
 	vals := map[string]string{}

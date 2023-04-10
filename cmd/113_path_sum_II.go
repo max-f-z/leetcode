@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//lint:ignore U1000 unused
 func pathSum(root *TreeNode, targetSum int) [][]int {
 	return pathSumHelper(root, targetSum, []int{})
 }

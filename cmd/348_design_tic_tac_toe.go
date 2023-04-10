@@ -26,6 +26,7 @@ func Constructor348(n int) TicTacToe {
           0: No one wins.
           1: Player 1 wins.
           2: Player 2 wins. */
+//lint:ignore ST1006 this
 func (this *TicTacToe) Move(row int, col int, player int) int {
 	d := 1
 	if player == 2 {

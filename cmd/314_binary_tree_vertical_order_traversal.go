@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func verticalOrder(root *TreeNode) [][]int {
 	res := &[][]int{}
 

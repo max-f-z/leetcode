@@ -27,9 +27,7 @@ func helper(s string, words []string) bool {
 	step := len(words[0])
 
 	copy := []string{}
-	for _, v := range words {
-		copy = append(copy, v)
-	}
+	copy = append(copy, words...)
 
 	for i, v := range words {
 		if v == s[:step] {

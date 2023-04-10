@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func threeSumSmaller(nums []int, target int) int {
 	res := 0
 
