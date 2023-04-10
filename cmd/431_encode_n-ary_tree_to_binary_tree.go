@@ -14,11 +14,13 @@ func Constructor431() *Codec431 {
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *Codec431) encode(root *Node431) *TreeNode {
 	return encodeHelper(root)
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *Codec431) decode(root *TreeNode) *Node431 {
 	return decodeHelper(root)
 }

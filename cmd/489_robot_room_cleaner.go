@@ -20,16 +20,12 @@ func cleanRoomDFS(r *Robot, i, j int, direction int, visited map[[2]int]bool) {
 			switch direction {
 			case 0:
 				row = i - 1
-				break
 			case 90:
 				col = j + 1
-				break
 			case 180:
 				row = i + 1
-				break
 			case 270:
 				col = j - 1
-				break
 			}
 
 			cleanRoomDFS(r, row, col, direction, visited)
@@ -59,16 +55,12 @@ func (robot *Robot) Move() bool {
 	switch robot.direction {
 	case 0:
 		y = -1
-		break
 	case 90:
 		x = 1
-		break
 	case 180:
 		y = 1
-		break
 	case 270:
 		x = -1
-		break
 	}
 	newX := robot.x + x
 	newY := robot.y + y
