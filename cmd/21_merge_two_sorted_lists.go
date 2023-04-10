@@ -49,6 +49,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	return dummy.Next
 }
 
+//lint:ignore U1000 unused
 func practice21(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil && l2 == nil {
 		return nil

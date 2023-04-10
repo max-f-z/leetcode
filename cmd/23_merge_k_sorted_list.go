@@ -14,7 +14,6 @@ func mergeKLists(lists []*ListNode) *ListNode {
 	for _, v := range lists {
 		if v != nil {
 			heap.Push(&pq, v)
-			v = v.Next
 		}
 	}
 
@@ -84,6 +83,7 @@ func (mh *mhNode) Pop() (v interface{}) {
 	return v
 }
 
+//lint:ignore U1000 unused
 func mergeKArrays(lists [][]int) []int {
 	mh := &mhNode{}
 
