@@ -19,9 +19,7 @@ func letterCombinations(digits string) []string {
 		tmp := []string{}
 
 		if len(res) == 0 {
-			for _, w := range dict[string(v)] {
-				tmp = append(tmp, w)
-			}
+			tmp = append(tmp, dict[string(v)]...)
 		} else {
 			for _, u := range res {
 				for _, w := range dict[string(v)] {
