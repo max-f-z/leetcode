@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+//lint:ignore U1000 unused
 func countAndSay(n int) string {
 	if n == 1 {
 		return "1"

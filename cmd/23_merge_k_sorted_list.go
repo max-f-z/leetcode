@@ -5,6 +5,7 @@ import "container/heap"
 /*
 https://www.youtube.com/watch?v=5xT5GMTFvRI
 */
+//lint:ignore U1000 unused
 func mergeKLists(lists []*ListNode) *ListNode {
 	pq := make(PQ, 0)
 

@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func myAtoi(str string) int {
 	var ans int64 = 0
 	var sign int64 = 1

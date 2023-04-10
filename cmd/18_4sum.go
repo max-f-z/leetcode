@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func fourSum(nums []int, target int) [][]int {
 	sort.Ints(nums)
 

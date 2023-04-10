@@ -7,10 +7,12 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+//lint:ignore U1000 unused
 type position struct {
 	start, end int
 }
 
+//lint:ignore U1000 unused
 func generateTrees(n int) []*TreeNode {
 	if n == 0 {
 		return nil

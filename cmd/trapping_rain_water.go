@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func trap(height []int) int {
 	if len(height) < 3 {
 		return 0

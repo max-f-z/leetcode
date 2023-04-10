@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func generateMatrix(n int) [][]int {
 	res := make([][]int, n)
 	for i := 0; i < n; i++ {

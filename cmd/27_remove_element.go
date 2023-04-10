@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func removeElement(nums []int, val int) int {
 	if len(nums) == 1 {
 		if nums[0] == val {

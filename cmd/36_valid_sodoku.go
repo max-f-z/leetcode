@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 // https://www.youtube.com/watch?v=Pl7mMcBm2b8
-
+//
+//lint:ignore U1000 unused
 func isValidSudoku(board [][]byte) bool {
 
 	box := map[string]bool{}

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minPathSumII(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
 

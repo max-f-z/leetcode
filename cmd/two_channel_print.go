@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+//lint:ignore U1000 unused
 func twoChannelPrint() {
 	ch1 := make(chan int)
 	ch2 := make(chan int)

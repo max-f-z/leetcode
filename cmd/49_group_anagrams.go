@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func groupAnagrams(strs []string) [][]string {
 	ans := [][]string{}
 
@@ -40,6 +41,7 @@ func groupAnagrams(strs []string) [][]string {
 	return ans
 }
 
+//lint:ignore U1000 unused
 func groupAnagramsRefactor(strs []string) [][]string {
 	groups := map[[26]int][]string{}
 

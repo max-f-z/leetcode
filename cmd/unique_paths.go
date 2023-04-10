@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//lint:ignore U1000 unused
 func uniquePaths(m int, n int) int {
 
 	dp := make([][]int, n)

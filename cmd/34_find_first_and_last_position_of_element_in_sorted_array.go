@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func searchRange(nums []int, target int) []int {
 	start := -1
 	end := -1

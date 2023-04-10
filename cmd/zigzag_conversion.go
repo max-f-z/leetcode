@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func convert(s string, numRows int) string {
 	if numRows == 1 {
 		return s

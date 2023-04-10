@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func swapPairs(head *ListNode) *ListNode {
 	flag := true
 	cur := head

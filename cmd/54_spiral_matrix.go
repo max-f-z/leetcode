@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func spiralOrder(matrix [][]int) []int {
 	if len(matrix) == 0 {
 		return []int{}

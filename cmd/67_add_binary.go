@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func addBinary(a string, b string) string {
 	if a == "0" {
 		return b

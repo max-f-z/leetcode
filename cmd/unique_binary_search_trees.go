@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func numTrees(n int) int {
 	res := make([]int, n+1)
 	res[0] = 1

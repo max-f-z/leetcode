@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func editDistance(word1, word2 string) int {
 	m, n := len(word1)+1, len(word2)+1
 

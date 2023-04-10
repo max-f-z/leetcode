@@ -5,6 +5,7 @@ type subset struct {
 	nums []int
 }
 
+//lint:ignore U1000 unused
 func subsets(nums []int) [][]int {
 	s := &subset{
 		res:  [][]int{},

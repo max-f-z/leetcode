@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isValid(s string) bool {
 	local := ""
 	dict := map[string]string{

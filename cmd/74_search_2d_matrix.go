@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//lint:ignore U1000 unused
 func searchMatrix(matrix [][]int, target int) bool {
 	m, n := len(matrix), len(matrix[0])
 

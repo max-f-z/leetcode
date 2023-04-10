@@ -5,6 +5,7 @@ type ListNode19 struct {
 	Next *ListNode19
 }
 
+//lint:ignore U1000 unused
 func removeNthFromEnd(head *ListNode19, n int) *ListNode19 {
 	dummy := &ListNode19{Next: head}
 	p1, p2 := dummy, dummy

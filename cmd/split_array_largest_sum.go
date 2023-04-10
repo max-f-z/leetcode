@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func splitArray(nums []int, m int) int {
 	l := 0
 	h := 0

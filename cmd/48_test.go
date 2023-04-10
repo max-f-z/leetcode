@@ -7,8 +7,8 @@ import (
 
 func Test48(t *testing.T) {
 	matrix := [][]int{
-		[]int{1, 2},
-		[]int{3, 4},
+		{1, 2},
+		{3, 4},
 	}
 
 	for i := 0; i < len(matrix); i++ {

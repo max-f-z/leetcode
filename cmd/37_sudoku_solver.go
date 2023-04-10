@@ -1,7 +1,8 @@
 package main
 
 // https://www.youtube.com/watch?v=ZV0InYdJKYw
-
+//
+//lint:ignore U1000 unused
 func solveSudoku(board [][]byte) {
 	solve(board)
 }

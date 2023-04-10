@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func fullJustify(words []string, maxWidth int) []string {
 	res := []string{}
 

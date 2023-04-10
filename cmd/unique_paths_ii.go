@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	n := len(obstacleGrid)
 	m := len(obstacleGrid[0])

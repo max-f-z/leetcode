@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func divide(dividend int, divisor int) int {
 	res := 0
 

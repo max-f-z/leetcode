@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func letterCombinations(digits string) []string {
 	dict := map[string][]string{
 		"2": {"a", "b", "c"},
