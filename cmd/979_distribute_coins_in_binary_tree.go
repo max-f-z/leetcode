@@ -10,6 +10,7 @@ package main
 
 var ans979 int
 
+//lint:ignore U1000 unused
 func distributeCoins(root *TreeNode) int {
 	ans979 = 0
 	distributeCoinsHelper(root)

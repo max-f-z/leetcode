@@ -12,6 +12,7 @@ func checkUnique(s string) bool {
 	return true
 }
 
+//lint:ignore U1000 unused
 func maxLength(arr []string) int {
 	return maxLengthHelper(0, arr, "")
 }

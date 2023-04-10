@@ -7,6 +7,7 @@ import (
 // if we start ith city jth week max vacation days
 var memo [][]int
 
+//lint:ignore U1000 unused
 func maxVacationDays(flights [][]int, days [][]int) int {
 	cities := len(days)
 	weeks := len(days[0])
@@ -46,6 +47,7 @@ func maxVacationDaysMemoDFS(flights [][]int, days [][]int, city int, week int, c
 	return max
 }
 
+//lint:ignore U1000 unused
 func maxVacationDaysTLE(flights [][]int, days [][]int) int {
 	cities := len(days)
 	weeks := len(days[0])

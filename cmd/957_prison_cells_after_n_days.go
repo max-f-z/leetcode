@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func prisonAfterNDays(cells []int, n int) []int {
 	var cur, original [8]int
 

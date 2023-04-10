@@ -1,9 +1,10 @@
 package main
 
-// type topoGraph struct {
-// 	parent map[int][]int
-// }
-
+//	type topoGraph struct {
+//		parent map[int][]int
+//	}
+//
+//lint:ignore U1000 unused
 func sequenceReconstruction(org []int, seqs [][]int) bool {
 	g := make(map[int][]int)
 	degree := make(map[int]int)

@@ -4,8 +4,10 @@ package main
 // str2  b,c,a
 
 // step1 a->d d,b,c step2 c->a d,b,a step3 b->c d,c,a step4 d->b b,c,a
-//            b,c,a            b,c,a            b,c,a            b,c,a
-
+//
+//	b,c,a            b,c,a            b,c,a            b,c,a
+//
+//lint:ignore U1000 unused
 func canConvert(str1 string, str2 string) bool {
 	cols := map[byte]byte{}
 

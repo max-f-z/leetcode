@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func longestCommonSubsequence(text1 string, text2 string) int {
 	l1, l2 := len(text1), len(text2)
 

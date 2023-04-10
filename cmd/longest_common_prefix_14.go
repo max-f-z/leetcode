@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func longestCommonPrefix(strs []string) string {
 	min := math.MaxInt32
 	for i := 0; i < len(strs); i++ {

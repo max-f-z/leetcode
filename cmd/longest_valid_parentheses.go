@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func longestValidParentheses(s string) int {
 	if len(s) == 0 {
 		return 0

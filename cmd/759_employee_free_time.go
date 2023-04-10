@@ -9,6 +9,7 @@ type Interval struct {
 	End   int
 }
 
+//lint:ignore U1000 unused
 func employeeFreeTime(schedule [][]*Interval) []*Interval {
 	minHeap := &Heap759{}
 	heap.Init(minHeap)

@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func slidingPuzzle(board [][]int) int {
 	oringinal := [][]int{{1, 2, 3}, {4, 5, 0, 0}}
 

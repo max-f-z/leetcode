@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func countBits(num int) []int {
 	res := make([]int, num+1)
 	res[0] = 0

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func singleNonDuplicate(nums []int) int {
 	l, r := 0, len(nums)-1
 

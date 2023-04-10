@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findNumberOfLIS(nums []int) int {
 	if len(nums) == 0 {
 		return 0

@@ -6,6 +6,7 @@ import "math"
 
 var memo1335 [][]int
 
+//lint:ignore U1000 unused
 func minDifficulty(jobDifficulty []int, d int) int {
 	if d > len(jobDifficulty) {
 		return -1

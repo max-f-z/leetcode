@@ -22,6 +22,7 @@ func (p profits) Swap(i, j int) {
 	p[i], p[j] = p[j], p[i]
 }
 
+//lint:ignore U1000 unused
 func jobScheduling(startTime []int, endTime []int, profit []int) int {
 	ps := profits{}
 	for i := 0; i < len(startTime); i++ {

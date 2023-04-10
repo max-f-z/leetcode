@@ -4,6 +4,7 @@ import (
 	"container/list"
 )
 
+//lint:ignore U1000 unused
 func killProcess(pid []int, ppid []int, kill int) []int {
 	cols := map[int][]int{}
 

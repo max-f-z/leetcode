@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findMaxForm(strs []string, m int, n int) int {
 	dp := make([][]int, m+1)
 	for i := 0; i < m+1; i++ {

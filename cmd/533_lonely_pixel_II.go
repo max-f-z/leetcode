@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findBlackPixel(picture [][]byte, N int) int {
 	m := len(picture)
 	n := len(picture[0])

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func subarraysDivByK(nums []int, k int) int {
 	prefixMod := make([]int, len(nums))
 	modGroup := make([]int, k)

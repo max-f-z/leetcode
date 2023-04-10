@@ -14,11 +14,13 @@ type SnakeGame struct {
 	foodIdx int
 }
 
-/** Initialize your data structure here.
-  @param width - screen width
-  @param height - screen height
-  @param food - A list of food positions
-  E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
+/*
+  - Initialize your data structure here.
+    @param width - screen width
+    @param height - screen height
+    @param food - A list of food positions
+    E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0].
+*/
 func Constructor353(width int, height int, food [][]int) SnakeGame {
 	sg := SnakeGame{}
 	sg.h = height
@@ -38,10 +40,13 @@ func Constructor353(width int, height int, food [][]int) SnakeGame {
 	return sg
 }
 
-/** Moves the snake.
-  @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
-  @return The game's score after the move. Return -1 if game over.
-  Game over when snake crosses the screen boundary or bites its body. */
+/*
+  - Moves the snake.
+    @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
+    @return The game's score after the move. Return -1 if game over.
+    Game over when snake crosses the screen boundary or bites its body.
+*/
+//lint:ignore ST1006 this
 func (this *SnakeGame) Move(direction string) int {
 	head, _ := this.body.Front().Value.([]int)
 	end, _ := this.end.Value.([]int)

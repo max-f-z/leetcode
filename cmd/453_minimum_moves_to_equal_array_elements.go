@@ -1,8 +1,10 @@
 package main
 
-//  sum(all) + m(n-1) = (a1+m) * n
-//  sum(all) + mn -m = a1 * n + mn
-//  m = sum(all) - a1 * n
+// sum(all) + m(n-1) = (a1+m) * n
+// sum(all) + mn -m = a1 * n + mn
+// m = sum(all) - a1 * n
+//
+//lint:ignore U1000 unused
 func minMoves(nums []int) int {
 	if len(nums) == 1 {
 		return 0

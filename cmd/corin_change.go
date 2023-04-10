@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func coinChange(coins []int, amount int) int {
 	if amount == 0 {
 		return 0

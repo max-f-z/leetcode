@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func findDuplicate(paths []string) [][]string {
 	cols := map[string][]string{}
 

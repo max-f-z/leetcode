@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+//lint:ignore U1000 unused
 func validWordAbbreviation(word string, abbr string) bool {
 	idx2 := 0
 	idx1 := 0

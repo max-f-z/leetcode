@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func sortTransformedArray(nums []int, a int, b int, c int) []int {
 	res := make([]int, len(nums))
 	switch {

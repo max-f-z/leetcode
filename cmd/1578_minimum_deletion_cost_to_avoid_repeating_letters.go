@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minCost1578(s string, cost []int) int {
 	val := 0
 

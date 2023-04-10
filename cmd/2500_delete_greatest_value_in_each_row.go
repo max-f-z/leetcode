@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func deleteGreatestValue(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
 

@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func str2tree(s string) *TreeNode {
 	if s == "()" || s == "" {
 		return nil

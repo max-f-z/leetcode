@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isCompleteTree(root *TreeNode) bool {
 	queue := []*TreeNode{root}
 

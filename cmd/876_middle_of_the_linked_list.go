@@ -7,7 +7,7 @@ package main
  *     Next *ListNode
  * }
  */
-
+//lint:ignore U1000 unused
 func middleNode(head *ListNode) *ListNode {
 	p1 := head
 	p2 := head

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//lint:ignore U1000 unused
 func cleanRoom(robot *Robot) {
 	cleanRoomDFS(robot, 0, 0, 0, map[[2]int]bool{})
 }

@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func romanToInt(s string) int {
 	ref := map[string]int{
 		"M": 1000,

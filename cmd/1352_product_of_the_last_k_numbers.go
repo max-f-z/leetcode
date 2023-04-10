@@ -13,10 +13,12 @@ func Constructor1352() ProductOfNumbers {
 	return pn
 }
 
+//lint:ignore ST1006 this
 func (this *ProductOfNumbers) Add(num int) {
 	this.els.PushFront(num)
 }
 
+//lint:ignore ST1006 this
 func (this *ProductOfNumbers) GetProduct(k int) int {
 	val := 1
 

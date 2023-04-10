@@ -30,6 +30,7 @@ func calculateKey(m map[byte]bool) int {
 	return res
 }
 
+//lint:ignore U1000 unused
 func shortestPathAllKeys(grid []string) int {
 	h := len(grid)
 	w := len(grid[0])

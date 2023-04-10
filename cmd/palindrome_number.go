@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isPalindrome(x int) bool {
 	if x < 0 {
 		return false

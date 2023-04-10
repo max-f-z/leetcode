@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func decodeString(s string) string {
 	r, _ := decodeStr(s, 0)
 

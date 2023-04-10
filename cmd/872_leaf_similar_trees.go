@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
 	leaf1 := []int{}
 	leaf2 := []int{}

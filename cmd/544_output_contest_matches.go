@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+//lint:ignore U1000 unused
 func findContestMatch(n int) string {
 	strs := []string{}
 

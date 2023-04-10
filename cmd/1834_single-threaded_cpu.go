@@ -6,6 +6,8 @@ import (
 )
 
 // sorting + minHeap
+//
+//lint:ignore U1000 unused
 func getOrder(tasks [][]int) []int {
 	t := cpuTasks([][]int{})
 	for i := 0; i < len(tasks); i++ {

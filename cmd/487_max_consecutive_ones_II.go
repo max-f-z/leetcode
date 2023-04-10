@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findMaxConsecutiveOnes(nums []int) int {
 	start := 0
 	end := 0

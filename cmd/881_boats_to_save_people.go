@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func numRescueBoats(people []int, limit int) int {
 	sort.Ints(people)
 

@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func crackSafe(n int, k int) string {
 	res := ""
 

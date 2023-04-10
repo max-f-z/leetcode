@@ -4,6 +4,7 @@ import "math"
 
 var maxVal int
 
+//lint:ignore U1000 unused
 func longestConsecutive542(root *TreeNode) int {
 	maxVal = 0
 	longestConsecutiveDFS(root)

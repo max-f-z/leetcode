@@ -19,6 +19,7 @@ func Constructor901() StockSpanner {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *StockSpanner) Next(price int) int {
 	this.count++
 

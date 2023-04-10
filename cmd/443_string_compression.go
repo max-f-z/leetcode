@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+//lint:ignore U1000 unused
 func compress(chars []byte) int {
 	if len(chars) <= 1 {
 		return len(chars)

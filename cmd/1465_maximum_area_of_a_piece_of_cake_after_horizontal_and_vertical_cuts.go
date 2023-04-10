@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func maxArea1465(h int, w int, horizontalCuts []int, verticalCuts []int) int {
 	sort.Ints(horizontalCuts)
 	sort.Ints(verticalCuts)

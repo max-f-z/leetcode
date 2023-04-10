@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func minTransfers(transactions [][]int) int {
 	tmp := make(map[int]int)
 

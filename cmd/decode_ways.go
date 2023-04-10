@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+//lint:ignore U1000 unused
 func numDecodings(s string) int {
 	if s == "0" || string(s[0]) == "0" {
 		return 0

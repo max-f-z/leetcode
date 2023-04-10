@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func sumEvenAfterQueries(A []int, queries [][]int) []int {
 	sum := 0
 	for i := 0; i < len(A); i++ {

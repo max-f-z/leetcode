@@ -19,14 +19,17 @@ func Constructor428() *Codec428 {
 	return &codec
 }
 
+//lint:ignore ST1006 this
 func (this *Codec428) serialize(root *Node428) string {
 	return serializeHelper(root)
 }
 
+//lint:ignore ST1006 this
 func (this *Codec428) deserialize(data string) *Node428 {
 	return deserializeHelper(data)
 }
 
+//lint:ignore U1000 unused
 func serializeHelper(node *Node428) string {
 	if node == nil {
 		return ""
@@ -44,6 +47,7 @@ func serializeHelper(node *Node428) string {
 	return fmt.Sprintf("%d[%s]", node.Val, strings.Join(strs, " "))
 }
 
+//lint:ignore U1000 unused
 func deserializeHelper(data string) *Node428 {
 	if data == "" {
 		return nil

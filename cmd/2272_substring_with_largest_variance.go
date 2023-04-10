@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func largestVariance(s string) int {
 	max := 0
 	var a, b byte

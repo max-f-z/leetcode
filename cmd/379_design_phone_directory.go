@@ -12,6 +12,7 @@ func Constructor379(maxNumbers int) PhoneDirectory {
 	return PhoneDirectory{number: number}
 }
 
+//lint:ignore ST1006 this
 func (this *PhoneDirectory) Get() int {
 	if len(this.number) == 0 {
 		return -1
@@ -22,6 +23,7 @@ func (this *PhoneDirectory) Get() int {
 	return tmp
 }
 
+//lint:ignore ST1006 this
 func (this *PhoneDirectory) Check(number int) bool {
 	for _, v := range this.number {
 		if v == number {
@@ -31,6 +33,7 @@ func (this *PhoneDirectory) Check(number int) bool {
 	return false
 }
 
+//lint:ignore ST1006 this
 func (this *PhoneDirectory) Release(number int) {
 	flag := false
 	for _, v := range this.number {

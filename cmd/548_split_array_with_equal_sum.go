@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func splitArray548(nums []int) bool {
 	sums := make([]int, len(nums))
 	sums[0] = nums[0]

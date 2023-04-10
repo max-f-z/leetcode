@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+//lint:ignore U1000 unused
 func minDistance(word1 string, word2 string) int {
 	n, m := len(word1)+1, len(word2)+1
 

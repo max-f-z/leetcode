@@ -7,6 +7,7 @@ type Node1650 struct {
 	Parent *Node1650
 }
 
+//lint:ignore U1000 unused
 func lowestCommonAncestor1650(p *Node1650, q *Node1650) *Node1650 {
 	ancestorsOfP := map[*Node1650]bool{}
 

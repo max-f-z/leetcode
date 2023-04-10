@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minimumFuelCost(roads [][]int, seats int) int64 {
 	if len(roads) == 0 {
 		return 0

@@ -10,6 +10,7 @@ func Constructor359() Logger {
 	return l
 }
 
+//lint:ignore ST1006 this
 func (this *Logger) ShouldPrintMessage(timestamp int, message string) bool {
 	if _, ok := this.data[message]; !ok {
 		this.data[message] = timestamp

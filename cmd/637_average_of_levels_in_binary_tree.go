@@ -8,6 +8,7 @@ package main
  *     Right *TreeNode
  * }
  */
+//lint:ignore U1000 unused
 func averageOfLevels(root *TreeNode) []float64 {
 	results := []float64{}
 

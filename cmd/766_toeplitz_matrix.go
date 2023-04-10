@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isToeplitzMatrix(matrix [][]int) bool {
 	m, n := len(matrix), len(matrix[0])
 

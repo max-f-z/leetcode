@@ -1,6 +1,8 @@
 package main
 
 // leetcode 912 sort and array
+//
+//lint:ignore U1000 unused
 func quickSort(nums []int) []int {
 	if len(nums) <= 1 {
 		return nums

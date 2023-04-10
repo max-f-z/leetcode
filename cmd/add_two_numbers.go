@@ -5,6 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+//lint:ignore U1000 unused
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	carry := 0
 	dummy := &ListNode{}

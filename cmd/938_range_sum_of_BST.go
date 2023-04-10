@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func rangeSumBST(root *TreeNode, low int, high int) int {
 	return rangeSumBSTHelper(root, low, high)
 }

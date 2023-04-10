@@ -7,6 +7,7 @@ package main
  *     Next *ListNode
  * }
  */
+//lint:ignore U1000 unused
 func plusOne(head *ListNode) *ListNode {
 	val := plusOneHelper(head, 1)
 	if val == 0 {

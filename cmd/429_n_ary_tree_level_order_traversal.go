@@ -13,6 +13,7 @@ type Node429 struct {
 	Children []*Node429
 }
 
+//lint:ignore U1000 unused
 func levelOrder(root *Node429) [][]int {
 	queue := []*Node429{root}
 	results := [][]int{}

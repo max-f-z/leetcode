@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func intToRoman(num int) string {
 	bits := []string{"I", "V", "X", "L", "C", "D", "M"}
 

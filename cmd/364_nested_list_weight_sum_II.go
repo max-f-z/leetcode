@@ -19,6 +19,7 @@ func (n NestedInteger) GetList() []*NestedInteger {
 	return nil
 }
 
+//lint:ignore U1000 unused
 func depthSumInverse(nestedList []*NestedInteger) int {
 	res := 0
 	max := getDepth(nestedList)

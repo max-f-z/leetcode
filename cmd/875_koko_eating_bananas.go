@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minEatingSpeed(piles []int, h int) int {
 	maxPerPile := 0
 

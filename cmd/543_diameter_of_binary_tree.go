@@ -4,6 +4,7 @@ import "math"
 
 var val int
 
+//lint:ignore U1000 unused
 func diameterOfBinaryTree(root *TreeNode) int {
 	val = math.MinInt32
 

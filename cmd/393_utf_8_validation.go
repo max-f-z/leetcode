@@ -2,6 +2,7 @@ package main
 
 import "strconv"
 
+//lint:ignore U1000 unused
 func validUtf8(data []int) bool {
 	for len(data) > 0 {
 		bits := strconv.FormatInt(int64(data[0]), 2)

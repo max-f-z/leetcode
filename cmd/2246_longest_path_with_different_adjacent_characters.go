@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func longestPath(parent []int, s string) int {
 	child := map[int][]int{}
 

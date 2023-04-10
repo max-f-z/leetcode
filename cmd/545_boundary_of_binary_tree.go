@@ -2,6 +2,7 @@ package main
 
 var ans545 []int
 
+//lint:ignore U1000 unused
 func boundaryOfBinaryTree(root *TreeNode) []int {
 	ans545 = []int{}
 

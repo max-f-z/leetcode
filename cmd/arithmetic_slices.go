@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func numberOfArithmeticSlices(A []int) int {
 	count := 0
 	for i := 0; i < len(A)-2; i++ {

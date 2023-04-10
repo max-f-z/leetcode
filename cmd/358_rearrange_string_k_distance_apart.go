@@ -37,6 +37,7 @@ func (h *maxHeap358) Pop() (v interface{}) {
 	return v
 }
 
+//lint:ignore U1000 unused
 func rearrangeString(s string, k int) string {
 	chars := map[byte]int{}
 

@@ -2,6 +2,7 @@ package main
 
 import "container/heap"
 
+//lint:ignore U1000 unused
 func minimumDeviation(nums []int) int {
 	maxH := &maxHeap{}
 

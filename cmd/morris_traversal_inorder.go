@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func morrisInorder(root *TreeNode) []int {
 	ans := []int{}
 

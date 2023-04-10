@@ -2,6 +2,7 @@ package main
 
 import "math"
 
+//lint:ignore U1000 unused
 func findTilt(root *TreeNode) int {
 	tilt, _ := findTiltHelper(root)
 	return tilt

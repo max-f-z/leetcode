@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func longestSquareStreak(nums []int) int {
 	vals := map[int]int{}
 	for i := 0; i < len(nums); i++ {

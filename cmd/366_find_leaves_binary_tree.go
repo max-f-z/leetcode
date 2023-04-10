@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findLeaves(root *TreeNode) [][]int {
 	res := [][]int{}
 	for root != nil {

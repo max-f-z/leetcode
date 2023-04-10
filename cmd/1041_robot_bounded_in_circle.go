@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func isRobotBounded(instructions string) bool {
 
 	x, y := 0, 0

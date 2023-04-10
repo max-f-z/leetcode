@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func pourWater(heights []int, V int, K int) []int {
 	for i := 0; i < V; i++ {
 		h := heights[K] + 1

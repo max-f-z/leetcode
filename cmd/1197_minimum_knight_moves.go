@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minKnightMoves(x int, y int) int {
 
 	if x == 0 && y == 0 {

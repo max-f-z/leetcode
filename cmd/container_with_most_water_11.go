@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func maxArea(height []int) int {
 	max := 0
 	for i := 0; i < len(height); i++ {

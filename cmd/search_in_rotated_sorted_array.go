@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func search(nums []int, target int) int {
 	n := len(nums)
 	l := 0

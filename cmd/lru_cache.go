@@ -21,6 +21,7 @@ func Constructor(capacity int) LRUCache {
 	return l
 }
 
+//lint:ignore ST1006 this
 func (this *LRUCache) Get(key int) int {
 	if this.content[key] == nil {
 		return -1
@@ -44,6 +45,7 @@ func (this *LRUCache) Get(key int) int {
 	return this.content[key].value
 }
 
+//lint:ignore ST1006 this
 func (this *LRUCache) Put(key int, value int) {
 	if this.content[key] != nil {
 		this.content[key].value = value

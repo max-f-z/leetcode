@@ -47,6 +47,7 @@ func Constructor604(compressedString string) StringIterator {
 	return s
 }
 
+//lint:ignore ST1006 this
 func (this *StringIterator) Next() byte {
 	if this.idx < this.prefix[len(this.prefix)-1]+this.nums[len(this.nums)-1] {
 		for i := range this.prefix {
@@ -59,9 +60,7 @@ func (this *StringIterator) Next() byte {
 	return ' '
 }
 
+//lint:ignore ST1006 this
 func (this *StringIterator) HasNext() bool {
-	if this.idx < this.prefix[len(this.prefix)-1]+this.nums[len(this.nums)-1] {
-		return true
-	}
-	return false
+	return this.idx < this.prefix[len(this.prefix)-1]+this.nums[len(this.nums)-1]
 }

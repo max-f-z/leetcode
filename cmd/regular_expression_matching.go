@@ -3,6 +3,7 @@ package main
 /*
 https://www.youtube.com/watch?v=KN22ZEpRTFY
 */
+//lint:ignore U1000 unused
 func isMatch(s string, p string) bool {
 	dp := make([][]bool, len(s)+1)
 	for i := 0; i < len(s)+1; i++ {

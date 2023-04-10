@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func numEnclaves(grid [][]int) int {
 	m := len(grid)
 	n := len(grid[0])

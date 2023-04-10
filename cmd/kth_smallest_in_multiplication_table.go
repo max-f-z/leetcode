@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findKthNumber(m int, n int, k int) int {
 	l := 1
 	h := m * n

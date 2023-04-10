@@ -8,6 +8,7 @@ type Node510 struct {
 	Parent *Node510
 }
 
+//lint:ignore U1000 unused
 func inorderSuccessor510(node *Node510) *Node510 {
 	if node.Right != nil {
 		node = node.Right

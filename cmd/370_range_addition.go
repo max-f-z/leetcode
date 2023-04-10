@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func getModifiedArray(length int, updates [][]int) []int {
 	res := make([]int, length)
 

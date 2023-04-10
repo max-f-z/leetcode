@@ -14,10 +14,12 @@ func Constructor362() HitCounter {
 	return hc
 }
 
+//lint:ignore ST1006 this
 func (this *HitCounter) Hit(timestamp int) {
 	this.stack.PushBack(timestamp)
 }
 
+//lint:ignore ST1006 this
 func (this *HitCounter) GetHits(timestamp int) int {
 	for {
 		if this.stack.Len() == 0 {

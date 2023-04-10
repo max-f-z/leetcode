@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func addToArrayForm(num []int, k int) []int {
 	reverseInts(&num)
 	op := convertInt(k)

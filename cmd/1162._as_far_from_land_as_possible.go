@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func maxDistance(grid [][]int) int {
 	step := 0
 

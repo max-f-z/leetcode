@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func spiralMatrixIII(R int, C int, r0 int, c0 int) [][]int {
 	res := make([][]int, R*C)
 	for i := 0; i < R*C; i++ {

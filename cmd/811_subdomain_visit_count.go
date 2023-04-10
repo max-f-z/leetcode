@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+//lint:ignore U1000 unused
 func subdomainVisits(cpdomains []string) []string {
 	tmp := map[string]int{}
 

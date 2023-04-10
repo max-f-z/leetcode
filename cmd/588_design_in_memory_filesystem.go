@@ -37,6 +37,7 @@ func Constructor588() FileSystem {
 	return fs
 }
 
+//lint:ignore ST1006 this
 func (this *FileSystem) Ls(path string) []string {
 	current := this.root
 	paths := strings.Split(path, "/")
@@ -84,6 +85,7 @@ func (this *FileSystem) Mkdir(path string) {
 	}
 }
 
+//lint:ignore ST1006 this
 func (this *FileSystem) AddContentToFile(filePath string, content string) {
 	paths := strings.Split(filePath, "/")
 	current := this.root
@@ -106,6 +108,7 @@ func (this *FileSystem) AddContentToFile(filePath string, content string) {
 	current.content = current.content + content
 }
 
+//lint:ignore ST1006 this
 func (this *FileSystem) ReadContentFromFile(filePath string) string {
 	paths := strings.Split(filePath, "/")
 	current := this.root

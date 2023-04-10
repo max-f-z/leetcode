@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func totalFruit(fruits []int) int {
 	taken := map[int]int{}
 

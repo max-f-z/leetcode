@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func medianSlidingWindow(nums []int, k int) []float64 {
 	mf := Constructor295()
 

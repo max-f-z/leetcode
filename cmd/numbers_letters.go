@@ -41,9 +41,7 @@ func numsLetters() {
 					break
 				}
 				nums <- true
-				break
 			default:
-				break
 			}
 
 		}

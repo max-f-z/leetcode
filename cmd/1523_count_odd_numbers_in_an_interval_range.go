@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func countOdds(low int, high int) int {
 	lowOdds, highOdds := 0, 0
 	lowOdds = low / 2

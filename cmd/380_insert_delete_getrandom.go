@@ -15,6 +15,7 @@ func Constructor380() RandomizedSet {
 }
 
 /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
+//lint:ignore ST1006 this
 func (this *RandomizedSet) Insert(val int) bool {
 	if _, ok := this.numsMap[val]; ok {
 		return false
@@ -26,6 +27,7 @@ func (this *RandomizedSet) Insert(val int) bool {
 }
 
 /** Removes a value from the set. Returns true if the set contained the specified element. */
+//lint:ignore ST1006 this
 func (this *RandomizedSet) Remove(val int) bool {
 	index, ok := this.numsMap[val]
 	if !ok {
@@ -47,6 +49,7 @@ func (this *RandomizedSet) Remove(val int) bool {
 }
 
 /** Get a random element from the set. */
+//lint:ignore ST1006 this
 func (this *RandomizedSet) GetRandom() int {
 	index := rand.Intn(len(this.numsArray))
 

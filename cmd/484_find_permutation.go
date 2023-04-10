@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+//lint:ignore U1000 unused
 func findPermutation(s string) []int {
 	res := make([]int, len(s)+1)
 	for i := 0; i < len(s)+1; i++ {

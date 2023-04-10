@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	nums := merge(nums1, nums2)
 

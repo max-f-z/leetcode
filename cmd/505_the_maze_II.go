@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func shortestDistance505(maze [][]int, start []int, destination []int) int {
 	h := len(maze)
 	w := len(maze[0])

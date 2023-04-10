@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func validPalindrome(s string) bool {
 	for i := 0; i < len(s)/2; i++ {
 		if s[i] == s[len(s)-1-i] {

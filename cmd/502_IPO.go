@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+//lint:ignore U1000 unused
 func findMaximizedCapital(k int, w int, profits []int, capital []int) int {
 	l := len(profits)
 

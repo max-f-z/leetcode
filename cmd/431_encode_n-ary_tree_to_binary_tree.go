@@ -13,14 +13,17 @@ func Constructor431() *Codec431 {
 	return codec
 }
 
+//lint:ignore ST1006 this
 func (this *Codec431) encode(root *Node431) *TreeNode {
 	return encodeHelper(root)
 }
 
+//lint:ignore ST1006 this
 func (this *Codec431) decode(root *TreeNode) *Node431 {
 	return decodeHelper(root)
 }
 
+//lint:ignore U1000 unused
 func decodeHelper(node *TreeNode) *Node431 {
 	if node == nil {
 		return nil
@@ -43,6 +46,7 @@ func decodeHelper(node *TreeNode) *Node431 {
 	return &tmp
 }
 
+//lint:ignore U1000 unused
 func encodeHelper(node *Node431) *TreeNode {
 	if node == nil {
 		return nil

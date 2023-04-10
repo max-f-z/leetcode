@@ -4,6 +4,7 @@ import (
 	"strconv"
 )
 
+//lint:ignore U1000 unused
 func maximum69Number(num int) int {
 	str := strconv.Itoa(num)
 	flip := false

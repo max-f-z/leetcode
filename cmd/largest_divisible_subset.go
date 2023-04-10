@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+//lint:ignore U1000 unused
 func largestDivisibleSubset(nums []int) []int {
 	if len(nums) < 2 {
 		return []int{}

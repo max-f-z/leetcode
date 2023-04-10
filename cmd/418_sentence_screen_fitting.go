@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func wordsTyping(sentence []string, rows int, cols int) int {
 	row := 0
 	col := 0

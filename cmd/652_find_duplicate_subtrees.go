@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//lint:ignore U1000 unused
 func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
 	mem := map[string]int{}
 	ans := []*TreeNode{}
