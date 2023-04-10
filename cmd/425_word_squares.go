@@ -65,6 +65,7 @@ func ConstructTrie(strs []string) *TrieNode {
 	return root
 }
 
+//lint:ignore U1000 unused
 func (root *TrieNode) search(word string) bool {
 	cur := root
 

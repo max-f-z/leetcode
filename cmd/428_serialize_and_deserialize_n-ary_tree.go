@@ -20,11 +20,13 @@ func Constructor428() *Codec428 {
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *Codec428) serialize(root *Node428) string {
 	return serializeHelper(root)
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *Codec428) deserialize(data string) *Node428 {
 	return deserializeHelper(data)
 }

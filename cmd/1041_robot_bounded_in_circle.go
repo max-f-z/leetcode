@@ -12,16 +12,12 @@ func isRobotBounded(instructions string) bool {
 			switch direction {
 			case 0:
 				y += 1
-				break
 			case 1:
 				x -= 1
-				break
 			case 2:
 				y -= 1
-				break
 			case 3:
 				x += 1
-				break
 			}
 		} else if instructions[i] == 'L' {
 			direction = (direction + 1) % 4

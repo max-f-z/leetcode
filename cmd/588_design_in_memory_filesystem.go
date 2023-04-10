@@ -63,6 +63,7 @@ func (this *FileSystem) Ls(path string) []string {
 	return ans
 }
 
+//lint:ignore ST1006 this
 func (this *FileSystem) Mkdir(path string) {
 	paths := strings.Split(path, "/")
 	current := this.root

@@ -40,6 +40,7 @@ func pathSumHelper(root *TreeNode, targetSum int, prev []int) [][]int {
 	return ans
 }
 
+//lint:ignore U1000 unused
 func ans(pairs [][]int, a int, b int) ([]int, []int) {
 	parents := map[int][]int{}
 	for _, v := range pairs {

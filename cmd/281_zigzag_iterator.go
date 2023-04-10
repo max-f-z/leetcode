@@ -12,6 +12,7 @@ func Constructor281(v1, v2 []int) *ZigzagIterator {
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *ZigzagIterator) next() int {
 	var v int
 	if this.flag {
@@ -34,6 +35,7 @@ func (this *ZigzagIterator) next() int {
 }
 
 //lint:ignore ST1006 this
+//lint:ignore U1000 unused
 func (this *ZigzagIterator) hasNext() bool {
 	if len(this.v1) == 0 && len(this.v2) == 0 {
 		return false

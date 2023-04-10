@@ -1,5 +1,6 @@
 package main
 
+//lint:ignore U1000 unused
 func minScore(n int, roads [][]int) int {
 	graph := map[int]map[int]int{}
 

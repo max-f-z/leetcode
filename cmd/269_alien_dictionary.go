@@ -64,6 +64,7 @@ func alienOrder(words []string) string {
 	return res
 }
 
+//lint:ignore U1000 unused
 func alienOrder2(words []string) string {
 	parent := make(map[byte][]byte, 0)
 

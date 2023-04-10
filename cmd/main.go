@@ -12,6 +12,7 @@ func main() {
 	// fmt.Println(wordSquares([]string{"abat", "baba", "atan", "atal"}))
 }
 
+//lint:ignore U1000 unused
 func powerTrue(k int) bool {
 	for i := 0; i < 100; i++ {
 		if k == int(math.Pow(2, float64(i))) {

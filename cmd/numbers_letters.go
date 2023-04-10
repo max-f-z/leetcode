@@ -10,6 +10,7 @@ func numsLetters() {
 
 	go func() {
 		i := 1
+		//lint:ignore S1000 allow
 		for {
 			select {
 			case <-nums:
@@ -18,9 +19,6 @@ func numsLetters() {
 				fmt.Print(i)
 				i++
 				letters <- true
-				break
-			default:
-				break
 			}
 		}
 	}()
@@ -30,6 +28,7 @@ func numsLetters() {
 	go func(wg *sync.WaitGroup) {
 		str := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 		i := 0
+		//lint:ignore S1000 allow
 		for {
 			select {
 			case <-letters:
@@ -41,7 +40,6 @@ func numsLetters() {
 					break
 				}
 				nums <- true
-			default:
 			}
 
 		}

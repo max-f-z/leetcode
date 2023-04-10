@@ -25,9 +25,7 @@ func Constructor341(nestedList []*NestedInteger) *NestedIterator {
 				newQ = append(newQ, v)
 			} else {
 				flag = false
-				for _, vv := range v.GetList() {
-					newQ = append(newQ, vv)
-				}
+				newQ = append(newQ, v.GetList()...)
 			}
 		}
 
