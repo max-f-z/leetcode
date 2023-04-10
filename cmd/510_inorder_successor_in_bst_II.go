@@ -32,6 +32,4 @@ func inorderSuccessor510(node *Node510) *Node510 {
 
 		return p
 	}
-
-	return node.Parent
 }

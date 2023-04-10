@@ -2,10 +2,10 @@ package main
 
 func hasPath(maze [][]int, start []int, destination []int) bool {
 	var directions = [][]int{
-		[]int{1, 0},
-		[]int{-1, 0},
-		[]int{0, 1},
-		[]int{0, -1},
+		{1, 0},
+		{-1, 0},
+		{0, 1},
+		{0, -1},
 	}
 	m, n := len(maze), len(maze[0])
 	visited := make([][]bool, m)

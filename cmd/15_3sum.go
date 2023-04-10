@@ -2,6 +2,7 @@ package main
 
 import "sort"
 
+//lint:ignore U1000 unused
 func threeSum(nums []int) [][]int {
 	var res [][]int
 	if len(nums) < 3 {
