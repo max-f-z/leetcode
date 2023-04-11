@@ -1,0 +1,16 @@
+package main
+
+//lint:ignore U1000 unused
+func removeStars(s string) string {
+	var stack []byte
+
+	for i := 0; i < len(s); i++ {
+		if s[i] == '*' {
+			stack = stack[:len(stack)-1]
+		} else {
+			stack = append(stack, s[i])
+		}
+	}
+
+	return string(stack)
+}
