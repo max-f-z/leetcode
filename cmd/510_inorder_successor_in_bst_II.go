@@ -20,7 +20,6 @@ func inorderSuccessor510(node *Node510) *Node510 {
 		return node
 	} else {
 		p := node
-		//lint:ignore SA4006 unused
 		successor := new(Node510)
 
 		for p != nil {
