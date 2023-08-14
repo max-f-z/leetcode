@@ -15,3 +15,35 @@ func findKthLargest(nums []int, k int) int {
 
 	return val
 }
+
+func findKthLargestII(nums []int, k int) int {
+	min, max := 10001, -10001
+	cnt := map[int]int{}
+	for i := 0; i < len(nums); i++ {
+		if min > nums[i] {
+			min = nums[i]
+		}
+
+		if max < nums[i] {
+			max = nums[i]
+		}
+		cnt[nums[i]]++
+	}
+
+	for i := max; i >= min; i-- {
+		if cnt[i] == 0 {
+			continue
+		}
+
+		if k-cnt[i] > 0 {
+			k = k - cnt[i]
+			continue
+		}
+
+		if k-cnt[i] <= 0 {
+			return i
+		}
+	}
+
+	return -1
+}
