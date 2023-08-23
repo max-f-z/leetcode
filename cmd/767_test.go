@@ -1,9 +1,13 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"gotest.tools/v3/assert"
+)
 
 func Test767(t *testing.T) {
-	m := reorganizeString("zhmyo")
+	m := reorganizeString("aab")
 
-	t.Log(m)
+	assert.Check(t, m == "aba")
 }
