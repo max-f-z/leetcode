@@ -1,9 +1,13 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"gotest.tools/v3/assert"
+)
 
 func Test1647(t *testing.T) {
 	ans := minDeletions("bbcebab")
 
-	t.Log(ans)
+	assert.Check(t, ans == 2)
 }
