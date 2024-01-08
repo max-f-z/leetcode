@@ -1,9 +1,5 @@
 package main
 
-import (
-	"math"
-)
-
 //lint:ignore U1000 unused
 func minDistance(word1 string, word2 string) int {
 	n, m := len(word1)+1, len(word2)+1
@@ -30,12 +26,12 @@ func minDistance(word1 string, word2 string) int {
 	return dp[n-1][m-1]
 }
 
-func min(a ...int) int {
-	min := math.MaxInt64
-	for _, v := range a {
-		if v < min {
-			min = v
-		}
-	}
-	return min
-}
+// func min(a ...int) int {
+// 	min := math.MaxInt64
+// 	for _, v := range a {
+// 		if v < min {
+// 			min = v
+// 		}
+// 	}
+// 	return min
+// }
