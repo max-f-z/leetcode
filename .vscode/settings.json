@@ -1,3 +1,6 @@
 {
-    "go.inferGopath": false
+		"go.inferGopath": false,
+		"gopls": {
+			"ui.diagnostic.analyses": { "unusedparams": false }
+		}
 }
