@@ -27,13 +27,13 @@ func largestBSTSubtreeHelper(res *int, node *TreeNode) (bool, int64, int64, int)
 	return true, min2(int64(node.Val), leftMn), max(int64(node.Val), rightMx), count
 }
 
-func max(x, y int64) int64 {
-	if x > y {
-		return x
-	}
+// func max(x, y int64) int64 {
+// 	if x > y {
+// 		return x
+// 	}
 
-	return y
-}
+// 	return y
+// }
 
 func min2(x, y int64) int64 {
 	if x < y {
